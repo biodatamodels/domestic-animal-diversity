@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://biodatamodels.github.io/essdive-file-level-metadata/Breed/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Class: Breed - Domestic Animal Diversity Schema DEMO ONLY</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Class: Breed";
+    var mkdocs_page_input_path = "Breed.md";
+    var mkdocs_page_url = "/essdive-file-level-metadata/Breed/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SYBSJVZ23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2SYBSJVZ23');
+  </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Domestic Animal Diversity Schema DEMO ONLY</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../index.md">Index</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Domestic Animal Diversity Schema DEMO ONLY</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Class: Breed</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/cmungall/essdive-file-level-metadata/edit/master/docs/Breed.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="class-breed">Class: Breed</h1>
+<p>URI: <a href="https://w3id.org/exampleBreed">example:Breed</a></p>
+<p><a href="https://yuml.me/diagram/nofunky;dir:TB/class/[Breed&#124;Country:string%20%3F;ISO3:string%20%3F;Specie:Specie_enum%20%3F;Breed:string%20%3F;Description_Of_Specific_Uses:string%20%3F;Lang:string%20%3F;Description:string%20%3F;Transboundary_name:string%20*;Other_name:string%20%3F;Uses:string%20%3F;Additional_information:string%20%3F;Additional_information_comments:string%20%3F;Efabis_cultural_role_comment:string%20%3F;Efabis_cultural_value:string%20%3F;Adaptability_to_specific_environment:string%20%3F;Specific_resistance_or_tolerance:string%20%3F;Specific_reproductive_characteristic:string%20%3F;Special_characteristic_of_product:string%20%3F;Other_special_qualities:string%20%3F;Reference_for_special_qualities:string%20%3F;Efabis_genetic_features:string%20%3F;Efabis_environmental_role:string%20%3F;Efabis_adaptability_to_marginal_land:string%20%3F;Body_conformation:string%20%3F;Coat_description:string%20%3F;Coat_quality:string%20%3F;Comb_type:Comb_type_enum%20%3F;Skin_colour:Skin_colour_enum%20%3F;Shank_and_foot_colour:Shank_and_foot_colour_enum%20%3F;Plumage_colour:Plumage_colour_enum%20%3F;Pattern_within_feather:Pattern_within_feather_enum%20%3F;Avian_classification:Avian_classification_enum%20%3F;Color_comments:string%20%3F;Efabis_main_colour:string%20%3F;Efabis_skin_colour:string%20%3F;Number_of_horns_males:Number_of_horns_males_enum%20%3F;Number_of_horns_females:Number_of_horns_females_enum%20%3F;Horn_shape_size_and_comments:string%20%3F;Wither_height_males:float%20%3F;Wither_height_females:float%20%3F;Weight_males:float%20%3F;Weight_females:float%20%3F;Other_specific_visible_traits:string%20%3F;Breed_classification:Breed_classification_enum%20%3F;Herdbook:Herdbook_enum%20%3F;Herdbook_established:string%20%3F;Domestication_status:Domestication_status_enum%20%3F;Taxonomic_classification:Taxonomic_classification_enum%20%3F;Description_of_origin:string%20%3F;Year_of_origin:string%20%3F;Import:string%20%3F;Location_within_country:string%20%3F;Eggs_per_year_AVG:datetime%20%3F;Eggs_per_year_MIN:integer%20%3F;Eggs_per_year_MAX:integer%20%3F;Egg_weight:float%20%3F;Wool_or_hair:Wool_or_hair_enum%20%3F;Wool_type:Wool_type_enum%20%3F;Fleece_weight_AVG:float%20%3F;Fleece_weight_MIN:float%20%3F;Fleece_weight_MAX:float%20%3F;Fibre_diam:float%20%3F;Management_system:string%20%3F;Feeding_of_adults:string%20%3F;Mobility:string%20%3F;Milk_per_year_AVG:float%20%3F;Milk_per_year_MIN:integer%20%3F;Milk_per_year_MAX:integer%20%3F;Lactation_length_AVG:float%20%3F;Lactation_length_MIN:integer%20%3F;Lactation_length_MAX:integer%20%3F;Milk_yield_per_lactation_(kg)_AVG:float%20%3F;Milk_yield_per_lactation_(kg)_MIN:float%20%3F;Milk_yield_per_lactation_(kg)_MAX:float%20%3F;Milk_fat_AVG:float%20%3F;Milk_fat_MIN:float%20%3F;Milk_fat_MAX:float%20%3F;Milk_per_day:float%20%3F;Number_of_lactations:float%20%3F;Efabis_milk_protein_AVG:float%20%3F;Efabis_milk_protein_MIN:float%20%3F;Efabis_milk_protein_MAX:float%20%3F;Birth_weight_males:float%20%3F;Birth_weight_females:float%20%3F;Age_maturity_males:float%20%3F;Age_maturity_females:float%20%3F;Age_breeding_males:float%20%3F;Age_breeding_females:float%20%3F;Age_first_parturition_AVG:float%20%3F;Age_first_parturition_MIN:float%20%3F;Age_first_parturition_MAX:float%20%3F;Parturition_interval_AVG:float%20%3F;Parturition_interval_MIN:integer%20%3F;Parturition_interval_MAX:integer%20%3F;Length_productive_life:float%20%3F;Daily_gain:float%20%3F;Carcass_weight:float%20%3F;Dressing_percentage:float%20%3F;Performance_data_reference:string%20%3F;Managment_conditions_performance_measured:string%20%3F;Comments_managment_conditions:string%20%3F;Additional_performance_parameters:string%20%3F;Litter_size_AVG:float%20%3F;Litter_size_MIN:float%20%3F;Litter_size_MAX:float%20%3F;Geographical_classification:Geographical_classification_enum%20%3F;Local_cryo_conservation_status:Local_cryo_conservation_status_enum%20%3F;Local_Risk:Local_Risk_enum%20%3F;Detailed_local_risk_status:Detailed_local_risk_status_enum%20%3F;Regional_Transboundary_Risk_(detailed):Regional_Transboundary_Risk_(detailed)_enum%20%3F;International_Transboundary_Risk_(detailed):International_Transboundary_Risk_(detailed)_enum%20%3F]"><img alt="img" src="https://yuml.me/diagram/nofunky;dir:TB/class/[Breed&#124;Country:string%20%3F;ISO3:string%20%3F;Specie:Specie_enum%20%3F;Breed:string%20%3F;Description_Of_Specific_Uses:string%20%3F;Lang:string%20%3F;Description:string%20%3F;Transboundary_name:string%20*;Other_name:string%20%3F;Uses:string%20%3F;Additional_information:string%20%3F;Additional_information_comments:string%20%3F;Efabis_cultural_role_comment:string%20%3F;Efabis_cultural_value:string%20%3F;Adaptability_to_specific_environment:string%20%3F;Specific_resistance_or_tolerance:string%20%3F;Specific_reproductive_characteristic:string%20%3F;Special_characteristic_of_product:string%20%3F;Other_special_qualities:string%20%3F;Reference_for_special_qualities:string%20%3F;Efabis_genetic_features:string%20%3F;Efabis_environmental_role:string%20%3F;Efabis_adaptability_to_marginal_land:string%20%3F;Body_conformation:string%20%3F;Coat_description:string%20%3F;Coat_quality:string%20%3F;Comb_type:Comb_type_enum%20%3F;Skin_colour:Skin_colour_enum%20%3F;Shank_and_foot_colour:Shank_and_foot_colour_enum%20%3F;Plumage_colour:Plumage_colour_enum%20%3F;Pattern_within_feather:Pattern_within_feather_enum%20%3F;Avian_classification:Avian_classification_enum%20%3F;Color_comments:string%20%3F;Efabis_main_colour:string%20%3F;Efabis_skin_colour:string%20%3F;Number_of_horns_males:Number_of_horns_males_enum%20%3F;Number_of_horns_females:Number_of_horns_females_enum%20%3F;Horn_shape_size_and_comments:string%20%3F;Wither_height_males:float%20%3F;Wither_height_females:float%20%3F;Weight_males:float%20%3F;Weight_females:float%20%3F;Other_specific_visible_traits:string%20%3F;Breed_classification:Breed_classification_enum%20%3F;Herdbook:Herdbook_enum%20%3F;Herdbook_established:string%20%3F;Domestication_status:Domestication_status_enum%20%3F;Taxonomic_classification:Taxonomic_classification_enum%20%3F;Description_of_origin:string%20%3F;Year_of_origin:string%20%3F;Import:string%20%3F;Location_within_country:string%20%3F;Eggs_per_year_AVG:datetime%20%3F;Eggs_per_year_MIN:integer%20%3F;Eggs_per_year_MAX:integer%20%3F;Egg_weight:float%20%3F;Wool_or_hair:Wool_or_hair_enum%20%3F;Wool_type:Wool_type_enum%20%3F;Fleece_weight_AVG:float%20%3F;Fleece_weight_MIN:float%20%3F;Fleece_weight_MAX:float%20%3F;Fibre_diam:float%20%3F;Management_system:string%20%3F;Feeding_of_adults:string%20%3F;Mobility:string%20%3F;Milk_per_year_AVG:float%20%3F;Milk_per_year_MIN:integer%20%3F;Milk_per_year_MAX:integer%20%3F;Lactation_length_AVG:float%20%3F;Lactation_length_MIN:integer%20%3F;Lactation_length_MAX:integer%20%3F;Milk_yield_per_lactation_(kg)_AVG:float%20%3F;Milk_yield_per_lactation_(kg)_MIN:float%20%3F;Milk_yield_per_lactation_(kg)_MAX:float%20%3F;Milk_fat_AVG:float%20%3F;Milk_fat_MIN:float%20%3F;Milk_fat_MAX:float%20%3F;Milk_per_day:float%20%3F;Number_of_lactations:float%20%3F;Efabis_milk_protein_AVG:float%20%3F;Efabis_milk_protein_MIN:float%20%3F;Efabis_milk_protein_MAX:float%20%3F;Birth_weight_males:float%20%3F;Birth_weight_females:float%20%3F;Age_maturity_males:float%20%3F;Age_maturity_females:float%20%3F;Age_breeding_males:float%20%3F;Age_breeding_females:float%20%3F;Age_first_parturition_AVG:float%20%3F;Age_first_parturition_MIN:float%20%3F;Age_first_parturition_MAX:float%20%3F;Parturition_interval_AVG:float%20%3F;Parturition_interval_MIN:integer%20%3F;Parturition_interval_MAX:integer%20%3F;Length_productive_life:float%20%3F;Daily_gain:float%20%3F;Carcass_weight:float%20%3F;Dressing_percentage:float%20%3F;Performance_data_reference:string%20%3F;Managment_conditions_performance_measured:string%20%3F;Comments_managment_conditions:string%20%3F;Additional_performance_parameters:string%20%3F;Litter_size_AVG:float%20%3F;Litter_size_MIN:float%20%3F;Litter_size_MAX:float%20%3F;Geographical_classification:Geographical_classification_enum%20%3F;Local_cryo_conservation_status:Local_cryo_conservation_status_enum%20%3F;Local_Risk:Local_Risk_enum%20%3F;Detailed_local_risk_status:Detailed_local_risk_status_enum%20%3F;Regional_Transboundary_Risk_(detailed):Regional_Transboundary_Risk_(detailed)_enum%20%3F;International_Transboundary_Risk_(detailed):International_Transboundary_Risk_(detailed)_enum%20%3F]" /></a></p>
+<h2 id="attributes">Attributes</h2>
+<h3 id="own">Own</h3>
+<ul>
+<li><a href="../Country/">Country</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Zimbabwe None</li>
+</ul>
+</li>
+<li><a href="../ISO3/">ISO3</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: ZWE None</li>
+</ul>
+</li>
+<li><a href="../Specie/">Specie</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Specie_enum/">Specie_enum</a></li>
+<li>Example: Sheep None</li>
+</ul>
+</li>
+<li><a href="./">Breed</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Wiltiper None</li>
+</ul>
+</li>
+<li><a href="../Description_Of_Specific_Uses/">Description Of Specific Uses</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: While poultry are used mainly for meat and eggs, they are also commonly used in traditional rituals and as gifts at various occasions throughout the country. Their droppings are used in feed formulations as well as a source of manure. None</li>
+</ul>
+</li>
+<li><a href="../Lang/">Lang</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: eng. None</li>
+</ul>
+</li>
+<li><a href="../Description/">Description</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: fat-tailed with similar features to Masai and Tswana sheep.Sabi sheep are haired with multiplicity of colours from black through all shades of brown to pure white None</li>
+</ul>
+</li>
+<li><a href="../Transboundary_name/">Transboundary name</a>  <sub>0..*</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Van Rooy None</li>
+</ul>
+</li>
+<li><a href="../Other_name/">Other name</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Setswana None</li>
+</ul>
+</li>
+<li><a href="../Uses/">Uses</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Meat None</li>
+</ul>
+</li>
+<li><a href="../Additional_information/">Additional information</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: no flocks exist None</li>
+</ul>
+</li>
+<li><a href="../Additional_information_comments/">Additional information comments</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Breed now nonexististant None</li>
+</ul>
+</li>
+<li><a href="../Efabis_cultural_role_comment/">Efabis cultural role comment</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: It is ancient native breed of Ukraine. None</li>
+</ul>
+</li>
+<li><a href="../Efabis_cultural_value/">Efabis cultural value</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: The importance of this breed derives from its numerical value and the yield it provides to local farming through the production of milk, meat and wool. None</li>
+</ul>
+</li>
+<li><a href="../Adaptability_to_specific_environment/">Adaptability to specific environment</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: The breed is well adapted to semi-arid, sub-tropical climate. None</li>
+</ul>
+</li>
+<li><a href="../Specific_resistance_or_tolerance/">Specific resistance or tolerance</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Well adapted to cope with disease and parasite challenges. None</li>
+</ul>
+</li>
+<li><a href="../Specific_reproductive_characteristic/">Specific reproductive characteristic</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: The animals are breeding throughout the year. It is stated that the maternal abilities of Sabi sheep are much better than the maternal abilities of South African Mutton Merino. None</li>
+</ul>
+</li>
+<li><a href="../Special_characteristic_of_product/">Special characteristic of product</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: The fat of the tail is used for cooking and preservation. The meat has good flavour and is marbled. None</li>
+</ul>
+</li>
+<li><a href="../Other_special_qualities/">Other special qualities</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: These hardy animals survive by grazing and scavenging under extremely harsh conditions (particularly nutrition). None</li>
+</ul>
+</li>
+<li><a href="../Reference_for_special_qualities/">Reference for special qualities</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: H.K. Ward; Rhodesia Agricultural Journal, 56, 218-223 (1959). Had, Matopos Research Station I.K. Chifanba (1988) Journal Agric. Sci. Cambridge, 111, 59-65. None</li>
+</ul>
+</li>
+<li><a href="../Efabis_genetic_features/">Efabis genetic features</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: For Romanov sheep the high gene frequency of ES-1b is characteristic. AL B allele is prevailing in the population of Romanov sheep. The animals have rare allele of prealbumine - PA 0, which has low frequency. Ttransferrin has 5 alleles - Tf A, Tf B, Tf C, Tf D, Tf E. The most frequently transferrine alleles are Tf C and Tf D. None</li>
+</ul>
+</li>
+<li><a href="../Efabis_environmental_role/">Efabis environmental role</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: can use poor vegetation of ungraded nature pastures and do a landscape more attractive. None</li>
+</ul>
+</li>
+<li><a href="../Efabis_adaptability_to_marginal_land/">Efabis adaptability to marginal land</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: High adaptable. None</li>
+</ul>
+</li>
+<li><a href="../Body_conformation/">Body conformation</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+</ul>
+</li>
+<li><a href="../Coat_description/">Coat description</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+</ul>
+</li>
+<li><a href="../Coat_quality/">Coat quality</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+</ul>
+</li>
+<li><a href="../Comb_type/">Comb type</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Comb_type_enum/">Comb_type_enum</a></li>
+<li>Example: single None</li>
+</ul>
+</li>
+<li><a href="../Skin_colour/">Skin colour</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Skin_colour_enum/">Skin_colour_enum</a></li>
+<li>Example: yellow None</li>
+</ul>
+</li>
+<li><a href="../Shank_and_foot_colour/">Shank and foot colour</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Shank_and_foot_colour_enum/">Shank_and_foot_colour_enum</a></li>
+<li>Example: yellow None</li>
+</ul>
+</li>
+<li><a href="../Plumage_colour/">Plumage colour</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Plumage_colour_enum/">Plumage_colour_enum</a></li>
+<li>Example: various colours None</li>
+</ul>
+</li>
+<li><a href="../Pattern_within_feather/">Pattern within feather</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Pattern_within_feather_enum/">Pattern_within_feather_enum</a></li>
+<li>Example: mottled None</li>
+</ul>
+</li>
+<li><a href="../Avian_classification/">Avian classification</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Avian_classification_enum/">Avian_classification_enum</a></li>
+<li>Example: indigenous None</li>
+</ul>
+</li>
+<li><a href="../Color_comments/">Color comments</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: uni coloured: usually black, also white or brown None</li>
+</ul>
+</li>
+<li><a href="../Efabis_main_colour/">Efabis main colour</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: White. None</li>
+</ul>
+</li>
+<li><a href="../Efabis_skin_colour/">Efabis skin colour</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Skin colour is white with pink shade, but there can be dark spots. None</li>
+</ul>
+</li>
+<li><a href="../Number_of_horns_males/">Number of horns males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Number_of_horns_males_enum/">Number_of_horns_males_enum</a></li>
+<li>Example: 0/2 None</li>
+</ul>
+</li>
+<li><a href="../Number_of_horns_females/">Number of horns females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Number_of_horns_females_enum/">Number_of_horns_females_enum</a></li>
+<li>Example: 0/2 None</li>
+</ul>
+</li>
+<li><a href="../Horn_shape_size_and_comments/">Horn shape size and comments</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: females are rarely horned None</li>
+</ul>
+</li>
+<li><a href="../Wither_height_males/">Wither height males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 64 None</li>
+</ul>
+</li>
+<li><a href="../Wither_height_females/">Wither height females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 61 None</li>
+</ul>
+</li>
+<li><a href="../Weight_males/">Weight males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 90 None</li>
+</ul>
+</li>
+<li><a href="../Weight_females/">Weight females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 62 None</li>
+</ul>
+</li>
+<li><a href="../Other_specific_visible_traits/">Other specific visible traits</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: long legs, fat tail, coarse hair None</li>
+</ul>
+</li>
+<li><a href="../Breed_classification/">Breed classification</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Breed_classification_enum/">Breed_classification_enum</a></li>
+<li>Example: Locally adapted None</li>
+</ul>
+</li>
+<li><a href="../Herdbook/">Herdbook</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Herdbook_enum/">Herdbook_enum</a></li>
+<li>Example: y None</li>
+</ul>
+</li>
+<li><a href="../Herdbook_established/">Herdbook established</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: 1974 None</li>
+</ul>
+</li>
+<li><a href="../Domestication_status/">Domestication status</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Domestication_status_enum/">Domestication_status_enum</a></li>
+<li>Example: domestic None</li>
+</ul>
+</li>
+<li><a href="../Taxonomic_classification/">Taxonomic classification</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Taxonomic_classification_enum/">Taxonomic_classification_enum</a></li>
+<li>Example: breed None</li>
+</ul>
+</li>
+<li><a href="../Description_of_origin/">Description of origin</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: composite of Wiltshire Horn rams and Blackhead Persian ewes None</li>
+</ul>
+</li>
+<li><a href="../Year_of_origin/">Year of origin</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: 1950 None</li>
+</ul>
+</li>
+<li><a href="../Import/">Import</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: early 1969 ,Namibia and South Africa None</li>
+</ul>
+</li>
+<li><a href="../Location_within_country/">Location within country</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Hartley-Gatooma None</li>
+</ul>
+</li>
+<li><a href="../Eggs_per_year_AVG/">Eggs per year AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Datetime/">Datetime</a></li>
+<li>Example: 200 None</li>
+</ul>
+</li>
+<li><a href="../Eggs_per_year_MIN/">Eggs per year MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 170 None</li>
+</ul>
+</li>
+<li><a href="../Eggs_per_year_MAX/">Eggs per year MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 200 None</li>
+</ul>
+</li>
+<li><a href="../Egg_weight/">Egg weight</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 75 None</li>
+</ul>
+</li>
+<li><a href="../Wool_or_hair/">Wool or hair</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Wool_or_hair_enum/">Wool_or_hair_enum</a></li>
+<li>Example: hair None</li>
+</ul>
+</li>
+<li><a href="../Wool_type/">Wool type</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Wool_type_enum/">Wool_type_enum</a></li>
+<li>Example: medium None</li>
+</ul>
+</li>
+<li><a href="../Fleece_weight_AVG/">Fleece weight AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 4.75 None</li>
+</ul>
+</li>
+<li><a href="../Fleece_weight_MIN/">Fleece weight MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 3.22 None</li>
+</ul>
+</li>
+<li><a href="../Fleece_weight_MAX/">Fleece weight MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 6.67 None</li>
+</ul>
+</li>
+<li><a href="../Fibre_diam/">Fibre diam</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 22 None</li>
+</ul>
+</li>
+<li><a href="../Management_system/">Management system</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: semi - intensive None</li>
+</ul>
+</li>
+<li><a href="../Feeding_of_adults/">Feeding of adults</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: grazing None</li>
+</ul>
+</li>
+<li><a href="../Mobility/">Mobility</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: stationary None</li>
+</ul>
+</li>
+<li><a href="../Milk_per_year_AVG/">Milk per year AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 5170 None</li>
+</ul>
+</li>
+<li><a href="../Milk_per_year_MIN/">Milk per year MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 5000 None</li>
+</ul>
+</li>
+<li><a href="../Milk_per_year_MAX/">Milk per year MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 6000 None</li>
+</ul>
+</li>
+<li><a href="../Lactation_length_AVG/">Lactation length AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 180 None</li>
+</ul>
+</li>
+<li><a href="../Lactation_length_MIN/">Lactation length MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 245 None</li>
+</ul>
+</li>
+<li><a href="../Lactation_length_MAX/">Lactation length MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 270 None</li>
+</ul>
+</li>
+<li><a href="../Milk_yield_per_lactation_%28kg%29_AVG/">Milk yield per lactation (kg) AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 50 None</li>
+</ul>
+</li>
+<li><a href="../Milk_yield_per_lactation_%28kg%29_MIN/">Milk yield per lactation (kg) MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 213 None</li>
+</ul>
+</li>
+<li><a href="../Milk_yield_per_lactation_%28kg%29_MAX/">Milk yield per lactation (kg) MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 234 None</li>
+</ul>
+</li>
+<li><a href="../Milk_fat_AVG/">Milk fat AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 7.1 None</li>
+</ul>
+</li>
+<li><a href="../Milk_fat_MIN/">Milk fat MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 2 None</li>
+</ul>
+</li>
+<li><a href="../Milk_fat_MAX/">Milk fat MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 3 None</li>
+</ul>
+</li>
+<li><a href="../Milk_per_day/">Milk per day</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 0.47 None</li>
+</ul>
+</li>
+<li><a href="../Number_of_lactations/">Number of lactations</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 21 None</li>
+</ul>
+</li>
+<li><a href="../Efabis_milk_protein_AVG/">Efabis milk protein AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 5.97 None</li>
+</ul>
+</li>
+<li><a href="../Efabis_milk_protein_MIN/">Efabis milk protein MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 4.5 None</li>
+</ul>
+</li>
+<li><a href="../Efabis_milk_protein_MAX/">Efabis milk protein MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 3.6 None</li>
+</ul>
+</li>
+<li><a href="../Birth_weight_males/">Birth weight males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 3.4 None</li>
+</ul>
+</li>
+<li><a href="../Birth_weight_females/">Birth weight females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 3 None</li>
+</ul>
+</li>
+<li><a href="../Age_maturity_males/">Age maturity males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 18 None</li>
+</ul>
+</li>
+<li><a href="../Age_maturity_females/">Age maturity females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 18 None</li>
+</ul>
+</li>
+<li><a href="../Age_breeding_males/">Age breeding males</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 18 None</li>
+</ul>
+</li>
+<li><a href="../Age_breeding_females/">Age breeding females</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 18 None</li>
+</ul>
+</li>
+<li><a href="../Age_first_parturition_AVG/">Age first parturition AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 18 None</li>
+</ul>
+</li>
+<li><a href="../Age_first_parturition_MIN/">Age first parturition MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 34 None</li>
+</ul>
+</li>
+<li><a href="../Age_first_parturition_MAX/">Age first parturition MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 36 None</li>
+</ul>
+</li>
+<li><a href="../Parturition_interval_AVG/">Parturition interval AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 365 None</li>
+</ul>
+</li>
+<li><a href="../Parturition_interval_MIN/">Parturition interval MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 266 None</li>
+</ul>
+</li>
+<li><a href="../Parturition_interval_MAX/">Parturition interval MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Integer/">Integer</a></li>
+<li>Example: 363 None</li>
+</ul>
+</li>
+<li><a href="../Length_productive_life/">Length productive life</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 12 None</li>
+</ul>
+</li>
+<li><a href="../Daily_gain/">Daily gain</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 148 None</li>
+</ul>
+</li>
+<li><a href="../Carcass_weight/">Carcass weight</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 15.9 None</li>
+</ul>
+</li>
+<li><a href="../Dressing_percentage/">Dressing percentage</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 46.5 None</li>
+</ul>
+</li>
+<li><a href="../Performance_data_reference/">Performance data reference</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: FAO Breed Survey None</li>
+</ul>
+</li>
+<li><a href="../Managment_conditions_performance_measured/">Managment conditions performance measured</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: The value of carcass weight reported here is average for male at 3 pairs of permanent incisors. None</li>
+</ul>
+</li>
+<li><a href="../Comments_managment_conditions/">Comments managment conditions</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Commercial production of lamb and mutton. None</li>
+</ul>
+</li>
+<li><a href="../Additional_performance_parameters/">Additional performance parameters</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/String/">String</a></li>
+<li>Example: Parece que no se han conducido investigaciiones acerca de Wiltiper. None</li>
+</ul>
+</li>
+<li><a href="../Litter_size_AVG/">Litter size AVG</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 1.02 None</li>
+</ul>
+</li>
+<li><a href="../Litter_size_MIN/">Litter size MIN</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 1.02 None</li>
+</ul>
+</li>
+<li><a href="../Litter_size_MAX/">Litter size MAX</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../types/Float/">Float</a></li>
+<li>Example: 1.31 None</li>
+</ul>
+</li>
+<li><a href="../Geographical_classification/">Geographical classification</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Geographical_classification_enum/">Geographical_classification_enum</a></li>
+<li>Example: local None</li>
+</ul>
+</li>
+<li><a href="../Local_cryo_conservation_status/">Local cryo conservation status</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Local_cryo_conservation_status_enum/">Local_cryo_conservation_status_enum</a></li>
+<li>Example: No Information None</li>
+</ul>
+</li>
+<li><a href="../Local_Risk/">Local Risk</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Local_Risk_enum/">Local_Risk_enum</a></li>
+<li>Example: unknown None</li>
+</ul>
+</li>
+<li><a href="../Detailed_local_risk_status/">Detailed local risk status</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Detailed_local_risk_status_enum/">Detailed_local_risk_status_enum</a></li>
+<li>Example: unknown None</li>
+</ul>
+</li>
+<li><a href="../Regional_Transboundary_Risk_%28detailed%29/">Regional Transboundary Risk (detailed)</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../Regional_Transboundary_Risk_%28detailed%29_enum/">Regional_Transboundary_Risk_(detailed)_enum</a></li>
+<li>Example: notAtRisk None</li>
+</ul>
+</li>
+<li><a href="../International_Transboundary_Risk_%28detailed%29/">International Transboundary Risk (detailed)</a>  <sub>0..1</sub><ul>
+<li>Range: <a href="../International_Transboundary_Risk_%28detailed%29_enum/">International_Transboundary_Risk_(detailed)_enum</a></li>
+<li>Example: notAtRisk None</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/cmungall/essdive-file-level-metadata/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
