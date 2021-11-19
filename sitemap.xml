@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://biodatamodels.github.io/domestic_animal_diversity/</loc>
+         <lastmod>2021-11-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://biodatamodels.github.io/domestic_animal_diversity/Adaptability_to_specific_environment/</loc>
          <lastmod>2021-11-19</lastmod>
          <changefreq>daily</changefreq>
@@ -92,6 +97,11 @@
     </url>
     <url>
          <loc>https://biodatamodels.github.io/domestic_animal_diversity/Breed_classification_enum/</loc>
+         <lastmod>2021-11-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://biodatamodels.github.io/domestic_animal_diversity/Breed_name/</loc>
          <lastmod>2021-11-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
