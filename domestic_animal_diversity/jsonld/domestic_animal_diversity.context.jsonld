@@ -1,0 +1,418 @@
+{
+   "_comments": "Auto generated from domestic_animal_diversity.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-11-18T16:15:16\n    Schema: example\n    \n    id: https://w3id.org/example\n    description: example\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "example": {
+         "@id": "https://w3id.org/example",
+         "@prefix": true
+      },
+      "linkml": "https://w3id.org/linkml/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "@vocab": "https://w3id.org/example",
+      "Age_breeding_females": {
+         "@type": "xsd:float"
+      },
+      "Age_breeding_males": {
+         "@type": "xsd:float"
+      },
+      "Age_first_parturition_AVG": {
+         "@type": "xsd:float"
+      },
+      "Age_first_parturition_MAX": {
+         "@type": "xsd:float"
+      },
+      "Age_first_parturition_MIN": {
+         "@type": "xsd:float"
+      },
+      "Age_maturity_females": {
+         "@type": "xsd:float"
+      },
+      "Age_maturity_males": {
+         "@type": "xsd:float"
+      },
+      "Avian_classification": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Birth_weight_females": {
+         "@type": "xsd:float"
+      },
+      "Birth_weight_males": {
+         "@type": "xsd:float"
+      },
+      "Breed_classification": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Carcass_weight": {
+         "@type": "xsd:float"
+      },
+      "Comb_type": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Daily_gain": {
+         "@type": "xsd:float"
+      },
+      "Detailed_local_risk_status": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Domestication_status": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Dressing_percentage": {
+         "@type": "xsd:float"
+      },
+      "Efabis_milk_protein_AVG": {
+         "@type": "xsd:float"
+      },
+      "Efabis_milk_protein_MAX": {
+         "@type": "xsd:float"
+      },
+      "Efabis_milk_protein_MIN": {
+         "@type": "xsd:float"
+      },
+      "Egg_weight": {
+         "@type": "xsd:float"
+      },
+      "Eggs_per_year_AVG": {
+         "@type": "xsd:dateTime"
+      },
+      "Eggs_per_year_MAX": {
+         "@type": "xsd:integer"
+      },
+      "Eggs_per_year_MIN": {
+         "@type": "xsd:integer"
+      },
+      "Fibre_diam": {
+         "@type": "xsd:float"
+      },
+      "Fleece_weight_AVG": {
+         "@type": "xsd:float"
+      },
+      "Fleece_weight_MAX": {
+         "@type": "xsd:float"
+      },
+      "Fleece_weight_MIN": {
+         "@type": "xsd:float"
+      },
+      "Geo_Area_Code": {
+         "@type": "xsd:integer"
+      },
+      "Geographical_classification": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Herdbook": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Indicator_Reference_Number": {
+         "@type": "xsd:dateTime"
+      },
+      "International_Transboundary_Risk_(detailed)": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Lactation_length_AVG": {
+         "@type": "xsd:float"
+      },
+      "Lactation_length_MAX": {
+         "@type": "xsd:integer"
+      },
+      "Lactation_length_MIN": {
+         "@type": "xsd:integer"
+      },
+      "LDCs_Code": {
+         "@type": "xsd:integer"
+      },
+      "Length_productive_life": {
+         "@type": "xsd:float"
+      },
+      "Litter_size_AVG": {
+         "@type": "xsd:float"
+      },
+      "Litter_size_MAX": {
+         "@type": "xsd:float"
+      },
+      "Litter_size_MIN": {
+         "@type": "xsd:float"
+      },
+      "LLDCs_Code": {
+         "@type": "xsd:integer"
+      },
+      "Local_cryo_conservation_status": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Local_Risk": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "M49_Intermediate_Code": {
+         "@type": "xsd:integer"
+      },
+      "M49_Intermediate_Name": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "M49_Level_1_Code": {
+         "@type": "xsd:integer"
+      },
+      "M49_Level_1_Region": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "M49_Level_2_Code": {
+         "@type": "xsd:integer"
+      },
+      "MDG_Code": {
+         "@type": "xsd:integer"
+      },
+      "Milk_fat_AVG": {
+         "@type": "xsd:float"
+      },
+      "Milk_fat_MAX": {
+         "@type": "xsd:float"
+      },
+      "Milk_fat_MIN": {
+         "@type": "xsd:float"
+      },
+      "Milk_per_day": {
+         "@type": "xsd:float"
+      },
+      "Milk_per_year_AVG": {
+         "@type": "xsd:float"
+      },
+      "Milk_per_year_MAX": {
+         "@type": "xsd:integer"
+      },
+      "Milk_per_year_MIN": {
+         "@type": "xsd:integer"
+      },
+      "Milk_yield_per_lactation_(kg)_AVG": {
+         "@type": "xsd:float"
+      },
+      "Milk_yield_per_lactation_(kg)_MAX": {
+         "@type": "xsd:float"
+      },
+      "Milk_yield_per_lactation_(kg)_MIN": {
+         "@type": "xsd:float"
+      },
+      "Nature": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Number_of_countries_or_territories_in_the_region": {
+         "@type": "xsd:integer"
+      },
+      "Number_of_countries_or_territories_with_valid_data": {
+         "@type": "xsd:integer"
+      },
+      "Number_of_horns_females": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Number_of_horns_males": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Number_of_lactations": {
+         "@type": "xsd:float"
+      },
+      "Number_of_local_breeds_(not_extinct)": {
+         "@type": "xsd:integer"
+      },
+      "Number_of_local_breeds_at_risk": {
+         "@type": "xsd:integer"
+      },
+      "Number_of_local_breeds_not_at_risk": {
+         "@type": "xsd:integer"
+      },
+      "Number_of_local_breeds_with_unknown_status": {
+         "@type": "xsd:integer"
+      },
+      "Parturition_interval_AVG": {
+         "@type": "xsd:float"
+      },
+      "Parturition_interval_MAX": {
+         "@type": "xsd:integer"
+      },
+      "Parturition_interval_MIN": {
+         "@type": "xsd:integer"
+      },
+      "Pattern_within_feather": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Percentage_of_countries_or_territories_with_valid_data": {
+         "@type": "xsd:float"
+      },
+      "Plumage_colour": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Regional_Transboundary_Risk_(detailed)": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Reporting_Type": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "SDG_Region_Code": {
+         "@type": "xsd:integer"
+      },
+      "Series_Name": {
+         "@type": "xsd:integer"
+      },
+      "Shank_and_foot_colour": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Skin_colour": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Specie": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Taxonomic_classification": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Unit_of_Measurement": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Weight_females": {
+         "@type": "xsd:float"
+      },
+      "Weight_males": {
+         "@type": "xsd:float"
+      },
+      "Wither_height_females": {
+         "@type": "xsd:float"
+      },
+      "Wither_height_males": {
+         "@type": "xsd:float"
+      },
+      "Wool_or_hair": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Wool_type": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "Year": {
+         "@type": "xsd:integer"
+      }
+   }
+}

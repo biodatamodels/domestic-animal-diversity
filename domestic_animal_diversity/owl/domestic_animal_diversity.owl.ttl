@@ -1,0 +1,1498 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix example: <https://w3id.org/example> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+example: a owl:Ontology ;
+    rdfs:label "example" ;
+    IAO:0000700 example:Breed,
+        example:Indicator ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    skos:definition "example" ;
+    linkml:generation_date "2021-11-18T16:15:19" ;
+    linkml:metamodel_version "1.7.0" ;
+    linkml:source_file "domestic_animal_diversity.yaml" ;
+    linkml:source_file_date "2021-11-18T16:15:13" ;
+    linkml:source_file_size 29550 .
+
+linkml:SubsetDefinition a owl:Class ;
+    rdfs:label "subset_definition" ;
+    skos:definition "the name and description of a subset" .
+
+linkml:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+example:Adaptability_to_specific_environment a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Adaptability to specific environment" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='The breed is well adapted to semi-arid, sub-tropical climate.', description=None)" .
+
+example:Additional_information a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Additional information" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='no flocks exist', description=None)" .
+
+example:Additional_information_comments a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Additional information comments" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Breed now nonexististant', description=None)" .
+
+example:Additional_performance_parameters a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Additional performance parameters" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Parece que no se han conducido investigaciiones acerca de Wiltiper.', description=None)" .
+
+example:Age_breeding_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age breeding females" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Age_breeding_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age breeding males" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Age_first_parturition_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age first parturition AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Age_first_parturition_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age first parturition MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='36', description=None)" .
+
+example:Age_first_parturition_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age first parturition MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='34', description=None)" .
+
+example:Age_maturity_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age maturity females" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Age_maturity_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Age maturity males" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Avian_classification a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Avian classification" ;
+    rdfs:range <http://UNKNOWN.org/Avian_classification_enum> ;
+    linkml:examples "Example(value='indigenous', description=None)" .
+
+example:Birth_weight_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Birth weight females" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='3', description=None)" .
+
+example:Birth_weight_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Birth weight males" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='3.4', description=None)" .
+
+example:Body_conformation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Body conformation" ;
+    rdfs:range linkml:String .
+
+example:Breed_classification a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Breed classification" ;
+    rdfs:range <http://UNKNOWN.org/Breed_classification_enum> ;
+    linkml:examples "Example(value='Locally adapted', description=None)" .
+
+example:Carcass_weight a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Carcass weight" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='15.9', description=None)" .
+
+example:Coat_description a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Coat description" ;
+    rdfs:range linkml:String .
+
+example:Coat_quality a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Coat quality" ;
+    rdfs:range linkml:String .
+
+example:Color_comments a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Color comments" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='uni coloured: usually black, also white or brown', description=None)" .
+
+example:Comb_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Comb type" ;
+    rdfs:range <http://UNKNOWN.org/Comb_type_enum> ;
+    linkml:examples "Example(value='single', description=None)" .
+
+example:Comments_managment_conditions a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Comments managment conditions" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Commercial production of lamb and mutton.', description=None)" .
+
+example:Country a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Country" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Zimbabwe', description=None)" .
+
+example:Daily_gain a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Daily gain" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='148', description=None)" .
+
+example:Description a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Description" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='fat-tailed with similar features to Masai and Tswana sheep.Sabi sheep are haired with multiplicity of colours from black through all shades of brown to pure white', description=None)" .
+
+example:Description_Of_Specific_Uses a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Description Of Specific Uses" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='While poultry are used mainly for meat and eggs, they are also commonly used in traditional rituals and as gifts at various occasions throughout the country. Their droppings are used in feed formulations as well as a source of manure.', description=None)" .
+
+example:Description_of_origin a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Description of origin" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='composite of Wiltshire Horn rams and Blackhead Persian ewes', description=None)" .
+
+example:Detailed_local_risk_status a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Detailed local risk status" ;
+    rdfs:range <http://UNKNOWN.org/Detailed_local_risk_status_enum> ;
+    linkml:examples "Example(value='unknown', description=None)" .
+
+example:Domestication_status a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Domestication status" ;
+    rdfs:range <http://UNKNOWN.org/Domestication_status_enum> ;
+    linkml:examples "Example(value='domestic', description=None)" .
+
+example:Dressing_percentage a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Dressing percentage" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='46.5', description=None)" .
+
+example:Efabis_adaptability_to_marginal_land a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis adaptability to marginal land" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='High adaptable.', description=None)" .
+
+example:Efabis_cultural_role_comment a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis cultural role comment" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='It is ancient native breed of Ukraine.', description=None)" .
+
+example:Efabis_cultural_value a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis cultural value" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='The importance of this breed derives from its numerical value and the yield it provides to local farming through the production of milk, meat and wool.', description=None)" .
+
+example:Efabis_environmental_role a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis environmental role" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='can use poor vegetation of ungraded nature pastures and do a landscape more attractive.', description=None)" .
+
+example:Efabis_genetic_features a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis genetic features" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='For Romanov sheep the high gene frequency of ES-1b is characteristic. AL B allele is prevailing in the population of Romanov sheep. The animals have rare allele of prealbumine - PA 0, which has low frequency. Ttransferrin has 5 alleles - Tf A, Tf B, Tf C, Tf D, Tf E. The most frequently transferrine alleles are Tf C and Tf D.', description=None)" .
+
+example:Efabis_main_colour a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis main colour" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='White.', description=None)" .
+
+example:Efabis_milk_protein_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis milk protein AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='5.97', description=None)" .
+
+example:Efabis_milk_protein_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis milk protein MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='3.6', description=None)" .
+
+example:Efabis_milk_protein_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis milk protein MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='4.5', description=None)" .
+
+example:Efabis_skin_colour a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Efabis skin colour" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Skin colour is white with pink shade, but there can be dark spots.', description=None)" .
+
+example:Egg_weight a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Egg weight" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='75', description=None)" .
+
+example:Eggs_per_year_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Eggs per year AVG" ;
+    rdfs:range linkml:Datetime ;
+    linkml:examples "Example(value='200', description=None)" .
+
+example:Eggs_per_year_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Eggs per year MAX" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='200', description=None)" .
+
+example:Eggs_per_year_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Eggs per year MIN" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='170', description=None)" .
+
+example:Feeding_of_adults a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Feeding of adults" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='grazing', description=None)" .
+
+example:Fibre_diam a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Fibre diam" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='22', description=None)" .
+
+example:Fleece_weight_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Fleece weight AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='4.75', description=None)" .
+
+example:Fleece_weight_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Fleece weight MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='6.67', description=None)" .
+
+example:Fleece_weight_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Fleece weight MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='3.22', description=None)" .
+
+example:Foot_Notes a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Foot Notes" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Out of 4 local breeds, 100% are of unknown status', description=None)" .
+
+example:Geo_Area_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Geo Area Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='716', description=None)" .
+
+example:Geo_Area_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Geo Area Name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Zimbabwe', description=None)" .
+
+example:Geographical_classification a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Geographical classification" ;
+    rdfs:range <http://UNKNOWN.org/Geographical_classification_enum> ;
+    linkml:examples "Example(value='local', description=None)" .
+
+example:Herdbook a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Herdbook" ;
+    rdfs:range <http://UNKNOWN.org/Herdbook_enum> ;
+    linkml:examples "Example(value='y', description=None)" .
+
+example:Herdbook_established a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Herdbook established" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='1974', description=None)" .
+
+example:Horn_shape_size_and_comments a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Horn shape size and comments" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='females are rarely horned', description=None)" .
+
+example:ISO3 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ISO3" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='ZWE', description=None)" .
+
+example:Import a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Import" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='early 1969 ,Namibia and South Africa', description=None)" .
+
+example:Indicator a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Indicator" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Unit_of_Measurement_enum> ;
+            owl:onProperty example:Unit_of_Measurement ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Reporting_Type_enum> ;
+            owl:onProperty example:Reporting_Type ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty <https://w3id.org/exampleReference_Area_Type_(Countries)> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/M49_Level-1_Region_enum> ;
+            owl:onProperty example:M49_Level_1_Region ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:SDG_Region_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:LDCs_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Nature_enum> ;
+            owl:onProperty example:Nature ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:LDCs_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Geo_Area_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:MDG_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:LLDCs_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Number_of_local_breeds_not_at_risk ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Number_of_countries_or_territories_in_the_region ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Year ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:M49_Level_2_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Datetime ;
+            owl:onProperty example:Indicator_Reference_Number ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Geo_Area_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Series_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:LLDCs_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Number_of_countries_or_territories_with_valid_data ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Indicator_value ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Percentage_of_countries_or_territories_with_valid_data ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass example:DAD-IS7.9.2021HttpIdentifier ;
+            owl:onProperty example:Source_Detail ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:M49_Level_1_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Number_of_local_breeds_at_risk ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/M49_Intermediate_Name_enum> ;
+            owl:onProperty example:M49_Intermediate_Name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:MDG_Regions ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:SDG_Region_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:M49_Intermediate_Code ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Series_Description ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Foot_Notes ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Number_of_local_breeds_with_unknown_status ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty <https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:M49_Level_2_Name ] .
+
+example:Indicator_Reference_Number a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Indicator Reference Number" ;
+    rdfs:range linkml:Datetime ;
+    linkml:examples "Example(value='2.5.2', description=None)" .
+
+example:Indicator_value a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Indicator value" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='NA', description=None)" .
+
+<https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "International Transboundary Risk (detailed)" ;
+    rdfs:range <http://UNKNOWN.org/International_Transboundary_Risk_(detailed)_enum> ;
+    linkml:examples "Example(value='notAtRisk', description=None)" .
+
+example:LDCs_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "LDCs Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='199', description=None)" .
+
+example:LDCs_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "LDCs Name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Least Developed Countries (LDCs)', description=None)" .
+
+example:LLDCs_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "LLDCs Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='432', description=None)" .
+
+example:LLDCs_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "LLDCs Name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Landlocked developing countries (LLDCs)', description=None)" .
+
+example:Lactation_length_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Lactation length AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='180', description=None)" .
+
+example:Lactation_length_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Lactation length MAX" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='270', description=None)" .
+
+example:Lactation_length_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Lactation length MIN" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='245', description=None)" .
+
+example:Lang a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Lang" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='eng.', description=None)" .
+
+example:Length_productive_life a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Length productive life" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='12', description=None)" .
+
+example:Litter_size_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Litter size AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='1.02', description=None)" .
+
+example:Litter_size_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Litter size MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='1.31', description=None)" .
+
+example:Litter_size_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Litter size MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='1.02', description=None)" .
+
+example:Local_Risk a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Local Risk" ;
+    rdfs:range <http://UNKNOWN.org/Local_Risk_enum> ;
+    linkml:examples "Example(value='unknown', description=None)" .
+
+example:Local_cryo_conservation_status a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Local cryo conservation status" ;
+    rdfs:range <http://UNKNOWN.org/Local_cryo_conservation_status_enum> ;
+    linkml:examples "Example(value='No Information', description=None)" .
+
+example:Location_within_country a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Location within country" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Hartley-Gatooma', description=None)" .
+
+example:M49_Intermediate_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Intermediate Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='014', description=None)" .
+
+example:M49_Intermediate_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Intermediate Name" ;
+    rdfs:range <http://UNKNOWN.org/M49_Intermediate_Name_enum> ;
+    linkml:examples "Example(value='Eastern Africa (M49)', description=None)" .
+
+example:M49_Level_1_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Level-1 Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='002', description=None)" .
+
+example:M49_Level_1_Region a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Level-1 Region" ;
+    rdfs:range <http://UNKNOWN.org/M49_Level-1_Region_enum> ;
+    linkml:examples "Example(value='Africa', description=None)" .
+
+example:M49_Level_2_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Level-2 Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='202', description=None)" .
+
+example:M49_Level_2_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "M49 Level-2 Name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Sub-Saharan Africa (M49)', description=None)" .
+
+example:MDG_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "MDG Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='738', description=None)" .
+
+example:MDG_Regions a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "MDG Regions" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Sub-Saharan Africa (MDG)', description=None)" .
+
+example:Management_system a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Management system" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='semi - intensive', description=None)" .
+
+example:Managment_conditions_performance_measured a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Managment conditions performance measured" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='The value of carcass weight reported here is average for male at 3 pairs of permanent incisors.', description=None)" .
+
+example:Milk_fat_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk fat AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='7.1', description=None)" .
+
+example:Milk_fat_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk fat MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='3', description=None)" .
+
+example:Milk_fat_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk fat MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='2', description=None)" .
+
+example:Milk_per_day a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk per day" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='0.47', description=None)" .
+
+example:Milk_per_year_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk per year AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='5170', description=None)" .
+
+example:Milk_per_year_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk per year MAX" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='6000', description=None)" .
+
+example:Milk_per_year_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk per year MIN" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='5000', description=None)" .
+
+<https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk yield per lactation (kg) AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='50', description=None)" .
+
+<https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk yield per lactation (kg) MAX" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='234', description=None)" .
+
+<https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Milk yield per lactation (kg) MIN" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='213', description=None)" .
+
+example:Mobility a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Mobility" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='stationary', description=None)" .
+
+example:Nature a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Nature" ;
+    rdfs:range <http://UNKNOWN.org/Nature_enum> ;
+    linkml:examples "Example(value='NA', description=None)" .
+
+example:Number_of_countries_or_territories_in_the_region a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of countries or territories in the region" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='18', description=None)" .
+
+example:Number_of_countries_or_territories_with_valid_data a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of countries or territories with valid data" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='8', description=None)" .
+
+example:Number_of_horns_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of horns females" ;
+    rdfs:range <http://UNKNOWN.org/Number_of_horns_females_enum> ;
+    linkml:examples "Example(value='0/2', description=None)" .
+
+example:Number_of_horns_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of horns males" ;
+    rdfs:range <http://UNKNOWN.org/Number_of_horns_males_enum> ;
+    linkml:examples "Example(value='0/2', description=None)" .
+
+example:Number_of_lactations a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of lactations" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='21', description=None)" .
+
+<https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of local breeds (not extinct)" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='4', description=None)" .
+
+example:Number_of_local_breeds_at_risk a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of local breeds at risk" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='0', description=None)" .
+
+example:Number_of_local_breeds_not_at_risk a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of local breeds not at risk" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='0', description=None)" .
+
+example:Number_of_local_breeds_with_unknown_status a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Number of local breeds with unknown status" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='4', description=None)" .
+
+example:Other_name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Other name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Setswana', description=None)" .
+
+example:Other_special_qualities a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Other special qualities" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='These hardy animals survive by grazing and scavenging under extremely harsh conditions (particularly nutrition).', description=None)" .
+
+example:Other_specific_visible_traits a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Other specific visible traits" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='long legs, fat tail, coarse hair', description=None)" .
+
+example:Parturition_interval_AVG a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Parturition interval AVG" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='365', description=None)" .
+
+example:Parturition_interval_MAX a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Parturition interval MAX" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='363', description=None)" .
+
+example:Parturition_interval_MIN a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Parturition interval MIN" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='266', description=None)" .
+
+example:Pattern_within_feather a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Pattern within feather" ;
+    rdfs:range <http://UNKNOWN.org/Pattern_within_feather_enum> ;
+    linkml:examples "Example(value='mottled', description=None)" .
+
+example:Percentage_of_countries_or_territories_with_valid_data a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Percentage of countries or territories with valid data" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='44.44', description=None)" .
+
+example:Performance_data_reference a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Performance data reference" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='FAO Breed Survey', description=None)" .
+
+example:Plumage_colour a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Plumage colour" ;
+    rdfs:range <http://UNKNOWN.org/Plumage_colour_enum> ;
+    linkml:examples "Example(value='various colours', description=None)" .
+
+<https://w3id.org/exampleReference_Area_Type_(Countries)> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Reference Area Type (Countries)" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='ZWE', description=None)" .
+
+example:Reference_for_special_qualities a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Reference for special qualities" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='H.K. Ward; Rhodesia Agricultural Journal, 56, 218-223 (1959). Had, Matopos Research Station I.K. Chifanba (1988) Journal Agric. Sci. Cambridge, 111, 59-65.', description=None)" .
+
+<https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)> a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Regional Transboundary Risk (detailed)" ;
+    rdfs:range <http://UNKNOWN.org/Regional_Transboundary_Risk_(detailed)_enum> ;
+    linkml:examples "Example(value='notAtRisk', description=None)" .
+
+example:Reporting_Type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Reporting Type" ;
+    rdfs:range <http://UNKNOWN.org/Reporting_Type_enum> ;
+    linkml:examples "Example(value='N', description=None)" .
+
+example:SDG_Region_Code a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "SDG Region Code" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='202', description=None)" .
+
+example:SDG_Region_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "SDG Region Name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Sub-Saharan Africa (M49)', description=None)" .
+
+example:Series_Description a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Series Description" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Proportion of local breeds classified as being at risk of extinction', description=None)" .
+
+example:Series_Name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Series Name" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='3062', description=None)" .
+
+example:Shank_and_foot_colour a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Shank and foot colour" ;
+    rdfs:range <http://UNKNOWN.org/Shank_and_foot_colour_enum> ;
+    linkml:examples "Example(value='yellow', description=None)" .
+
+example:Skin_colour a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Skin colour" ;
+    rdfs:range <http://UNKNOWN.org/Skin_colour_enum> ;
+    linkml:examples "Example(value='yellow', description=None)" .
+
+example:Source_Detail a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Source Detail" ;
+    rdfs:range example:DAD-IS7.9.2021HttpIdentifier ;
+    linkml:examples "Example(value='DAD-IS 7.9.2021 http://www.fao.org/dad-is/', description=None)" .
+
+example:Special_characteristic_of_product a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Special characteristic of product" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='The fat of the tail is used for cooking and preservation. The meat has good flavour and is marbled.', description=None)" .
+
+example:Specie a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Specie" ;
+    rdfs:range <http://UNKNOWN.org/Specie_enum> ;
+    linkml:examples "Example(value='Sheep', description=None)" .
+
+example:Specific_reproductive_characteristic a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Specific reproductive characteristic" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='The animals are breeding throughout the year. It is stated that the maternal abilities of Sabi sheep are much better than the maternal abilities of South African Mutton Merino.', description=None)" .
+
+example:Specific_resistance_or_tolerance a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Specific resistance or tolerance" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Well adapted to cope with disease and parasite challenges.', description=None)" .
+
+example:Taxonomic_classification a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Taxonomic classification" ;
+    rdfs:range <http://UNKNOWN.org/Taxonomic_classification_enum> ;
+    linkml:examples "Example(value='breed', description=None)" .
+
+example:Transboundary_name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Transboundary name" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Van Rooy', description=None)" .
+
+example:Unit_of_Measurement a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Unit of Measurement" ;
+    rdfs:range <http://UNKNOWN.org/Unit_of_Measurement_enum> ;
+    linkml:examples "Example(value='PERCENT', description=None)" .
+
+example:Uses a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Uses" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='Meat', description=None)" .
+
+example:Weight_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Weight females" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='62', description=None)" .
+
+example:Weight_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Weight males" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='90', description=None)" .
+
+example:Wither_height_females a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Wither height females" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='61', description=None)" .
+
+example:Wither_height_males a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Wither height males" ;
+    rdfs:range linkml:Float ;
+    linkml:examples "Example(value='64', description=None)" .
+
+example:Wool_or_hair a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Wool or hair" ;
+    rdfs:range <http://UNKNOWN.org/Wool_or_hair_enum> ;
+    linkml:examples "Example(value='hair', description=None)" .
+
+example:Wool_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Wool type" ;
+    rdfs:range <http://UNKNOWN.org/Wool_type_enum> ;
+    linkml:examples "Example(value='medium', description=None)" .
+
+example:Year a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Year" ;
+    rdfs:range linkml:Integer ;
+    linkml:examples "Example(value='2021', description=None)" .
+
+example:Year_of_origin a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "Year of origin" ;
+    rdfs:range linkml:String ;
+    linkml:examples "Example(value='1950', description=None)" .
+
+linkml:TypeDefinition a owl:Class ;
+    rdfs:label "type_definition" ;
+    skos:definition "A data type definition." .
+
+example:Breed a owl:Class,
+        owl:ObjectProperty,
+        linkml:ClassDefinition,
+        linkml:SlotDefinition ;
+    rdfs:label "Breed" ;
+    rdfs:range linkml:String ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Wither_height_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Length_productive_life ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_genetic_features ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Milk_per_year_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Wither_height_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Milk_per_year_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Dressing_percentage ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Detailed_local_risk_status_enum> ;
+            owl:onProperty example:Detailed_local_risk_status ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Milk_fat_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Efabis_milk_protein_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Datetime ;
+            owl:onProperty example:Eggs_per_year_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Egg_weight ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Country ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Lang ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Wool_type_enum> ;
+            owl:onProperty example:Wool_type ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Body_conformation ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Comments_managment_conditions ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Parturition_interval_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_first_parturition_MAX ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty example:Transboundary_name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Number_of_horns_males_enum> ;
+            owl:onProperty example:Number_of_horns_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Herdbook_established ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Regional_Transboundary_Risk_(detailed)_enum> ;
+            owl:onProperty <https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Additional_information ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Other_special_qualities ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Import ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Description ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Herdbook_enum> ;
+            owl:onProperty example:Herdbook ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Parturition_interval_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Management_system ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Fibre_diam ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Description_of_origin ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_cultural_value ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Coat_quality ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Litter_size_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Additional_information_comments ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Managment_conditions_performance_measured ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Feeding_of_adults ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/International_Transboundary_Risk_(detailed)_enum> ;
+            owl:onProperty <https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Other_specific_visible_traits ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Skin_colour_enum> ;
+            owl:onProperty example:Skin_colour ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Number_of_lactations ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Fleece_weight_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Wool_or_hair_enum> ;
+            owl:onProperty example:Wool_or_hair ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_maturity_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Daily_gain ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Performance_data_reference ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_maturity_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Uses ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Number_of_horns_females_enum> ;
+            owl:onProperty example:Number_of_horns_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_breeding_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Other_name ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Reference_for_special_qualities ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Specie_enum> ;
+            owl:onProperty example:Specie ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_adaptability_to_marginal_land ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Year_of_origin ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Fleece_weight_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Parturition_interval_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Location_within_country ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Horn_shape_size_and_comments ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Additional_performance_parameters ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_cultural_role_comment ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Taxonomic_classification_enum> ;
+            owl:onProperty example:Taxonomic_classification ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Lactation_length_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Pattern_within_feather_enum> ;
+            owl:onProperty example:Pattern_within_feather ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Specific_resistance_or_tolerance ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Milk_fat_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Fleece_weight_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Efabis_milk_protein_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Avian_classification_enum> ;
+            owl:onProperty example:Avian_classification ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_breeding_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Plumage_colour_enum> ;
+            owl:onProperty example:Plumage_colour ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Birth_weight_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Specific_reproductive_characteristic ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Local_cryo_conservation_status_enum> ;
+            owl:onProperty example:Local_cryo_conservation_status ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_first_parturition_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Domestication_status_enum> ;
+            owl:onProperty example:Domestication_status ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Local_Risk_enum> ;
+            owl:onProperty example:Local_Risk ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Eggs_per_year_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Milk_fat_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:ISO3 ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Comb_type_enum> ;
+            owl:onProperty example:Comb_type ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_environmental_role ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Lactation_length_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Litter_size_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Age_first_parturition_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Birth_weight_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Shank_and_foot_colour_enum> ;
+            owl:onProperty example:Shank_and_foot_colour ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Lactation_length_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Geographical_classification_enum> ;
+            owl:onProperty example:Geographical_classification ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Weight_males ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://UNKNOWN.org/Breed_classification_enum> ;
+            owl:onProperty example:Breed_classification ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Carcass_weight ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Coat_description ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Adaptability_to_specific_environment ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Milk_per_day ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Litter_size_MIN ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Integer ;
+            owl:onProperty example:Eggs_per_year_MAX ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_main_colour ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Efabis_skin_colour ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Weight_females ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Milk_per_year_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty example:Efabis_milk_protein_AVG ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Special_characteristic_of_product ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Color_comments ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Mobility ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Breed ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty example:Description_Of_Specific_Uses ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:Float ;
+            owl:onProperty <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN> ] ;
+    linkml:examples "Example(value='Wiltiper', description=None)" .
+
+example:DAD-IS7.9.2021HttpIdentifier a owl:Class,
+        linkml:TypeDefinition ;
+    rdfs:label "DAD-IS 7.9.2021 http identifier" ;
+    rdfs:subClassOf linkml:String .
+
+linkml:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" ;
+    skos:definition "the definition of a class or interface" .
+
+linkml:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" ;
+    skos:definition "the definition of a property or a slot" .
+
+

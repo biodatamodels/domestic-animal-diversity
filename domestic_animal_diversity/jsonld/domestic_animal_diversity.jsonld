@@ -1,0 +1,4009 @@
+{
+  "name": "example",
+  "description": "example",
+  "id": "https://w3id.org/example",
+  "imports": [
+    "linkml:types"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "prefixes": [
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "example",
+      "prefix_reference": "https://w3id.org/example"
+    }
+  ],
+  "default_prefix": "example",
+  "default_range": "string",
+  "types": [
+    {
+      "name": "DAD_IS_7.9.2021_http_identifier",
+      "definition_uri": "https://w3id.org/exampleDAD-IS7.9.2021HttpIdentifier",
+      "from_schema": "https://w3id.org/example",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "description": "a complete URI",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "comments": [
+        "Used for inheritence and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "enums": [
+    {
+      "name": "Specie_enum",
+      "definition_uri": "https://w3id.org/exampleSpecieEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Horse",
+          "description": "Horse"
+        },
+        {
+          "text": "Deer",
+          "description": "Deer"
+        },
+        {
+          "text": "Rabbit",
+          "description": "Rabbit"
+        },
+        {
+          "text": "Llama",
+          "description": "Llama"
+        },
+        {
+          "text": "Peacock",
+          "description": "Peacock"
+        },
+        {
+          "text": "Pigeon",
+          "description": "Pigeon"
+        },
+        {
+          "text": "Cattle",
+          "description": "Cattle"
+        },
+        {
+          "text": "Goat",
+          "description": "Goat"
+        },
+        {
+          "text": "Partridge",
+          "description": "Partridge"
+        },
+        {
+          "text": "Quail",
+          "description": "Quail"
+        },
+        {
+          "text": "Ass",
+          "description": "Ass"
+        },
+        {
+          "text": "Pheasant",
+          "description": "Pheasant"
+        },
+        {
+          "text": "Alpaca",
+          "description": "Alpaca"
+        },
+        {
+          "text": "Goose (domestic)",
+          "description": "Goose (domestic)"
+        },
+        {
+          "text": "Dromedary Bactrian Camel",
+          "description": "Dromedary Bactrian Camel"
+        },
+        {
+          "text": "Ostrich",
+          "description": "Ostrich"
+        },
+        {
+          "text": "Guinea pig",
+          "description": "Guinea pig"
+        },
+        {
+          "text": "Buffalo",
+          "description": "Buffalo"
+        },
+        {
+          "text": "American Bison",
+          "description": "American Bison"
+        },
+        {
+          "text": "Guanaco",
+          "description": "Guanaco"
+        },
+        {
+          "text": "Chicken",
+          "description": "Chicken"
+        },
+        {
+          "text": "Guinea fowl",
+          "description": "Guinea fowl"
+        },
+        {
+          "text": "Nandu",
+          "description": "Nandu"
+        },
+        {
+          "text": "Duck(domestic) Muscovy duck",
+          "description": "Duck(domestic) Muscovy duck"
+        },
+        {
+          "text": "Dromedary",
+          "description": "Dromedary"
+        },
+        {
+          "text": "Yak (domestic)",
+          "description": "Yak (domestic)"
+        },
+        {
+          "text": "Bactrian camel",
+          "description": "Bactrian camel"
+        },
+        {
+          "text": "Sheep",
+          "description": "Sheep"
+        },
+        {
+          "text": "Muscovy duck",
+          "description": "Muscovy duck"
+        },
+        {
+          "text": "Turkey",
+          "description": "Turkey"
+        },
+        {
+          "text": "Swallow",
+          "description": "Swallow"
+        },
+        {
+          "text": "Duck (domestic)",
+          "description": "Duck (domestic)"
+        },
+        {
+          "text": "Cassowary",
+          "description": "Cassowary"
+        },
+        {
+          "text": "Emu",
+          "description": "Emu"
+        },
+        {
+          "text": "Dog",
+          "description": "Dog"
+        },
+        {
+          "text": "Vicu\u00f1a",
+          "description": "Vicu\u00f1a"
+        },
+        {
+          "text": "Pig",
+          "description": "Pig"
+        }
+      ]
+    },
+    {
+      "name": "Comb_type_enum",
+      "definition_uri": "https://w3id.org/exampleCombTypeEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "walnut",
+          "description": "walnut"
+        },
+        {
+          "text": "Duplex or V-shaped",
+          "description": "Duplex or V-shaped"
+        },
+        {
+          "text": "Single",
+          "description": "Single"
+        },
+        {
+          "text": "pea",
+          "description": "pea"
+        },
+        {
+          "text": "duplex or V-shaped",
+          "description": "duplex or V-shaped"
+        },
+        {
+          "text": "rose",
+          "description": "rose"
+        },
+        {
+          "text": "single",
+          "description": "single"
+        }
+      ]
+    },
+    {
+      "name": "Skin_colour_enum",
+      "definition_uri": "https://w3id.org/exampleSkinColourEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Blue-Black",
+          "description": "Blue-Black"
+        },
+        {
+          "text": "blue-black",
+          "description": "blue-black"
+        },
+        {
+          "text": "White",
+          "description": "White"
+        },
+        {
+          "text": "yellow",
+          "description": "yellow"
+        },
+        {
+          "text": "Yellow",
+          "description": "Yellow"
+        },
+        {
+          "text": "white",
+          "description": "white"
+        }
+      ]
+    },
+    {
+      "name": "Shank_and_foot_colour_enum",
+      "definition_uri": "https://w3id.org/exampleShankAndFootColourEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "green",
+          "description": "green"
+        },
+        {
+          "text": "reddish",
+          "description": "reddish"
+        },
+        {
+          "text": "white pinkish",
+          "description": "white pinkish"
+        },
+        {
+          "text": "various",
+          "description": "various"
+        },
+        {
+          "text": "Green",
+          "description": "Green"
+        },
+        {
+          "text": "Reddish",
+          "description": "Reddish"
+        },
+        {
+          "text": "grey",
+          "description": "grey"
+        },
+        {
+          "text": "black",
+          "description": "black"
+        },
+        {
+          "text": "blue",
+          "description": "blue"
+        },
+        {
+          "text": "yellow",
+          "description": "yellow"
+        },
+        {
+          "text": "Yellow",
+          "description": "Yellow"
+        },
+        {
+          "text": "orange",
+          "description": "orange"
+        },
+        {
+          "text": "Grey",
+          "description": "Grey"
+        },
+        {
+          "text": "Orange",
+          "description": "Orange"
+        },
+        {
+          "text": "white",
+          "description": "white"
+        },
+        {
+          "text": "Black",
+          "description": "Black"
+        }
+      ]
+    },
+    {
+      "name": "Plumage_colour_enum",
+      "definition_uri": "https://w3id.org/examplePlumageColourEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Grey and White",
+          "description": "Grey and White"
+        },
+        {
+          "text": "White",
+          "description": "White"
+        },
+        {
+          "text": "Brown",
+          "description": "Brown"
+        },
+        {
+          "text": "grey",
+          "description": "grey"
+        },
+        {
+          "text": "red and brown",
+          "description": "red and brown"
+        },
+        {
+          "text": "yellow",
+          "description": "yellow"
+        },
+        {
+          "text": "silver colombian",
+          "description": "silver colombian"
+        },
+        {
+          "text": "red and black",
+          "description": "red and black"
+        },
+        {
+          "text": "wild type and variants",
+          "description": "wild type and variants"
+        },
+        {
+          "text": "white and brown",
+          "description": "white and brown"
+        },
+        {
+          "text": "white and blue",
+          "description": "white and blue"
+        },
+        {
+          "text": "Grey and white",
+          "description": "Grey and white"
+        },
+        {
+          "text": "Red and Black",
+          "description": "Red and Black"
+        },
+        {
+          "text": "Various color",
+          "description": "Various color"
+        },
+        {
+          "text": "various colours",
+          "description": "various colours"
+        },
+        {
+          "text": "self-black",
+          "description": "self-black"
+        },
+        {
+          "text": "self-white",
+          "description": "self-white"
+        },
+        {
+          "text": "gold-colombian",
+          "description": "gold-colombian"
+        },
+        {
+          "text": "brown",
+          "description": "brown"
+        },
+        {
+          "text": "red",
+          "description": "red"
+        },
+        {
+          "text": "white",
+          "description": "white"
+        },
+        {
+          "text": "grey and white",
+          "description": "grey and white"
+        }
+      ]
+    },
+    {
+      "name": "Pattern_within_feather_enum",
+      "definition_uri": "https://w3id.org/examplePatternWithinFeatherEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "barred, autosomal",
+          "description": "barred, autosomal"
+        },
+        {
+          "text": "mottled",
+          "description": "mottled"
+        },
+        {
+          "text": "Barred, sex-linked",
+          "description": "Barred, sex-linked"
+        },
+        {
+          "text": "cuckoo",
+          "description": "cuckoo"
+        },
+        {
+          "text": "barred, sex-linked",
+          "description": "barred, sex-linked"
+        },
+        {
+          "text": "spangled",
+          "description": "spangled"
+        },
+        {
+          "text": "Barred, Sex-linked",
+          "description": "Barred, Sex-linked"
+        },
+        {
+          "text": "No special pattern",
+          "description": "No special pattern"
+        },
+        {
+          "text": "pencilled",
+          "description": "pencilled"
+        },
+        {
+          "text": "no special pattern",
+          "description": "no special pattern"
+        },
+        {
+          "text": "laced",
+          "description": "laced"
+        }
+      ]
+    },
+    {
+      "name": "Avian_classification_enum",
+      "definition_uri": "https://w3id.org/exampleAvianClassificationEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "indigenous",
+          "description": "indigenous"
+        },
+        {
+          "text": "fancy",
+          "description": "fancy"
+        },
+        {
+          "text": "middle level",
+          "description": "middle level"
+        },
+        {
+          "text": "Indigenous",
+          "description": "Indigenous"
+        },
+        {
+          "text": "laboratory",
+          "description": "laboratory"
+        },
+        {
+          "text": "Industrial",
+          "description": "Industrial"
+        },
+        {
+          "text": "Middle level",
+          "description": "Middle level"
+        },
+        {
+          "text": "industrial",
+          "description": "industrial"
+        },
+        {
+          "text": "Fancy",
+          "description": "Fancy"
+        },
+        {
+          "text": "Laboratory",
+          "description": "Laboratory"
+        }
+      ]
+    },
+    {
+      "name": "Number_of_horns_males_enum",
+      "definition_uri": "https://w3id.org/exampleNumberOfHornsMalesEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "0 / 2 / 4",
+          "description": "0 / 2 / 4"
+        },
+        {
+          "text": "4",
+          "description": "4"
+        },
+        {
+          "text": "2/4",
+          "description": "2/4"
+        },
+        {
+          "text": "0/2",
+          "description": "0/2"
+        },
+        {
+          "text": "2",
+          "description": "2"
+        },
+        {
+          "text": "0 / 2",
+          "description": "0 / 2"
+        },
+        {
+          "text": "0",
+          "description": "0"
+        },
+        {
+          "text": "0/2/4",
+          "description": "0/2/4"
+        }
+      ]
+    },
+    {
+      "name": "Number_of_horns_females_enum",
+      "definition_uri": "https://w3id.org/exampleNumberOfHornsFemalesEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "0 / 2 / 4",
+          "description": "0 / 2 / 4"
+        },
+        {
+          "text": "4",
+          "description": "4"
+        },
+        {
+          "text": "2/4",
+          "description": "2/4"
+        },
+        {
+          "text": "0/2",
+          "description": "0/2"
+        },
+        {
+          "text": "2",
+          "description": "2"
+        },
+        {
+          "text": "0 / 2",
+          "description": "0 / 2"
+        },
+        {
+          "text": "0",
+          "description": "0"
+        },
+        {
+          "text": "0/2/4",
+          "description": "0/2/4"
+        }
+      ]
+    },
+    {
+      "name": "Breed_classification_enum",
+      "definition_uri": "https://w3id.org/exampleBreedClassificationEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Exotic",
+          "description": "Exotic"
+        },
+        {
+          "text": "Native",
+          "description": "Native"
+        },
+        {
+          "text": "Locally adapted",
+          "description": "Locally adapted"
+        }
+      ]
+    },
+    {
+      "name": "Herdbook_enum",
+      "definition_uri": "https://w3id.org/exampleHerdbookEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "n",
+          "description": "n"
+        },
+        {
+          "text": "Y",
+          "description": "Y"
+        },
+        {
+          "text": "y",
+          "description": "y"
+        }
+      ]
+    },
+    {
+      "name": "Domestication_status_enum",
+      "definition_uri": "https://w3id.org/exampleDomesticationStatusEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Feral",
+          "description": "Feral"
+        },
+        {
+          "text": "feral",
+          "description": "feral"
+        },
+        {
+          "text": "wild",
+          "description": "wild"
+        },
+        {
+          "text": "domestic",
+          "description": "domestic"
+        },
+        {
+          "text": "Wild",
+          "description": "Wild"
+        },
+        {
+          "text": "Domestic",
+          "description": "Domestic"
+        }
+      ]
+    },
+    {
+      "name": "Taxonomic_classification_enum",
+      "definition_uri": "https://w3id.org/exampleTaxonomicClassificationEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Breed",
+          "description": "Breed"
+        },
+        {
+          "text": "breed",
+          "description": "breed"
+        },
+        {
+          "text": "mongrel (Birds)",
+          "description": "mongrel (Birds)"
+        },
+        {
+          "text": "variety",
+          "description": "variety"
+        },
+        {
+          "text": "Variety",
+          "description": "Variety"
+        },
+        {
+          "text": "Mongrel",
+          "description": "Mongrel"
+        },
+        {
+          "text": "strain",
+          "description": "strain"
+        },
+        {
+          "text": "Strain",
+          "description": "Strain"
+        },
+        {
+          "text": "Species",
+          "description": "Species"
+        },
+        {
+          "text": "line",
+          "description": "line"
+        },
+        {
+          "text": "Line",
+          "description": "Line"
+        },
+        {
+          "text": "species",
+          "description": "species"
+        }
+      ]
+    },
+    {
+      "name": "Wool_or_hair_enum",
+      "definition_uri": "https://w3id.org/exampleWoolOrHairEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "hair",
+          "description": "hair"
+        },
+        {
+          "text": "Wool",
+          "description": "Wool"
+        },
+        {
+          "text": "wool",
+          "description": "wool"
+        },
+        {
+          "text": "Hair",
+          "description": "Hair"
+        }
+      ]
+    },
+    {
+      "name": "Wool_type_enum",
+      "definition_uri": "https://w3id.org/exampleWoolTypeEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "medium",
+          "description": "medium"
+        },
+        {
+          "text": "Medium",
+          "description": "Medium"
+        },
+        {
+          "text": "Cashmere",
+          "description": "Cashmere"
+        },
+        {
+          "text": "cashmere",
+          "description": "cashmere"
+        },
+        {
+          "text": "Coarse / Carpet",
+          "description": "Coarse / Carpet"
+        },
+        {
+          "text": "Fine",
+          "description": "Fine"
+        },
+        {
+          "text": "mohair/angora",
+          "description": "mohair/angora"
+        },
+        {
+          "text": "Mohair / Angora",
+          "description": "Mohair / Angora"
+        },
+        {
+          "text": "coarse/carpet",
+          "description": "coarse/carpet"
+        },
+        {
+          "text": "fine",
+          "description": "fine"
+        }
+      ]
+    },
+    {
+      "name": "Geographical_classification_enum",
+      "definition_uri": "https://w3id.org/exampleGeographicalClassificationEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "international",
+          "description": "international"
+        },
+        {
+          "text": "local",
+          "description": "local"
+        },
+        {
+          "text": "regional",
+          "description": "regional"
+        }
+      ]
+    },
+    {
+      "name": "Local_cryo_conservation_status_enum",
+      "definition_uri": "https://w3id.org/exampleLocalCryoConservationStatusEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "No Information",
+          "description": "No Information"
+        },
+        {
+          "text": "Sufficient",
+          "description": "Sufficient"
+        },
+        {
+          "text": "No Material",
+          "description": "No Material"
+        },
+        {
+          "text": "Not Sufficient",
+          "description": "Not Sufficient"
+        }
+      ]
+    },
+    {
+      "name": "Local_Risk_enum",
+      "definition_uri": "https://w3id.org/exampleLocalRiskEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "notAtRisk",
+          "description": "notAtRisk"
+        },
+        {
+          "text": "extinct",
+          "description": "extinct"
+        },
+        {
+          "text": "atRisk",
+          "description": "atRisk"
+        },
+        {
+          "text": "cryoConservedOnly",
+          "description": "cryoConservedOnly"
+        },
+        {
+          "text": "unknown",
+          "description": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "Detailed_local_risk_status_enum",
+      "definition_uri": "https://w3id.org/exampleDetailedLocalRiskStatusEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "endangered",
+          "description": "endangered"
+        },
+        {
+          "text": "vulnerable",
+          "description": "vulnerable"
+        },
+        {
+          "text": "notAtRisk",
+          "description": "notAtRisk"
+        },
+        {
+          "text": "extinct",
+          "description": "extinct"
+        },
+        {
+          "text": "endangeredMaintained",
+          "description": "endangeredMaintained"
+        },
+        {
+          "text": "critical",
+          "description": "critical"
+        },
+        {
+          "text": "cryoConservedOnly",
+          "description": "cryoConservedOnly"
+        },
+        {
+          "text": "unknown",
+          "description": "unknown"
+        },
+        {
+          "text": "criticalMaintained",
+          "description": "criticalMaintained"
+        }
+      ]
+    },
+    {
+      "name": "Regional_Transboundary_Risk_(detailed)_enum",
+      "definition_uri": "https://w3id.org/exampleRegionalTransboundaryRisk(detailed)Enum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "endangered",
+          "description": "endangered"
+        },
+        {
+          "text": "vulnerable",
+          "description": "vulnerable"
+        },
+        {
+          "text": "notAtRisk",
+          "description": "notAtRisk"
+        },
+        {
+          "text": "extinct",
+          "description": "extinct"
+        },
+        {
+          "text": "critical",
+          "description": "critical"
+        },
+        {
+          "text": "unknown",
+          "description": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "International_Transboundary_Risk_(detailed)_enum",
+      "definition_uri": "https://w3id.org/exampleInternationalTransboundaryRisk(detailed)Enum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "endangered",
+          "description": "endangered"
+        },
+        {
+          "text": "vulnerable",
+          "description": "vulnerable"
+        },
+        {
+          "text": "notAtRisk",
+          "description": "notAtRisk"
+        },
+        {
+          "text": "critical",
+          "description": "critical"
+        },
+        {
+          "text": "unknown",
+          "description": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "Unit_of_Measurement_enum",
+      "definition_uri": "https://w3id.org/exampleUnitOfMeasurementEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "PERCENT",
+          "description": "PERCENT"
+        }
+      ]
+    },
+    {
+      "name": "Nature_enum",
+      "definition_uri": "https://w3id.org/exampleNatureEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "NA",
+          "description": "NA"
+        },
+        {
+          "text": "G",
+          "description": "G"
+        },
+        {
+          "text": "C",
+          "description": "C"
+        },
+        {
+          "text": "E",
+          "description": "E"
+        }
+      ]
+    },
+    {
+      "name": "Reporting_Type_enum",
+      "definition_uri": "https://w3id.org/exampleReportingTypeEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "R",
+          "description": "R"
+        },
+        {
+          "text": "G",
+          "description": "G"
+        },
+        {
+          "text": "N",
+          "description": "N"
+        }
+      ]
+    },
+    {
+      "name": "M49_Level-1_Region_enum",
+      "definition_uri": "https://w3id.org/exampleM49Level-1RegionEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Africa",
+          "description": "Africa"
+        },
+        {
+          "text": "Oceania (M49)",
+          "description": "Oceania (M49)"
+        },
+        {
+          "text": "Americas",
+          "description": "Americas"
+        },
+        {
+          "text": "Europe (M49)",
+          "description": "Europe (M49)"
+        },
+        {
+          "text": "Asia (M49)",
+          "description": "Asia (M49)"
+        }
+      ]
+    },
+    {
+      "name": "M49_Intermediate_Name_enum",
+      "definition_uri": "https://w3id.org/exampleM49IntermediateNameEnum",
+      "from_schema": "https://w3id.org/example",
+      "permissible_values": [
+        {
+          "text": "Middle Africa (M49)",
+          "description": "Middle Africa (M49)"
+        },
+        {
+          "text": "Central America (M49)",
+          "description": "Central America (M49)"
+        },
+        {
+          "text": "Eastern Africa (M49)",
+          "description": "Eastern Africa (M49)"
+        },
+        {
+          "text": "Southern Africa (M49)",
+          "description": "Southern Africa (M49)"
+        },
+        {
+          "text": "Caribbean (M49)",
+          "description": "Caribbean (M49)"
+        },
+        {
+          "text": "South America (M49)",
+          "description": "South America (M49)"
+        },
+        {
+          "text": "Western Africa (M49)",
+          "description": "Western Africa (M49)"
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "Country",
+      "definition_uri": "https://w3id.org/exampleCountry",
+      "examples": [
+        {
+          "value": "Zimbabwe",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleCountry",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ISO3",
+      "definition_uri": "https://w3id.org/exampleISO3",
+      "examples": [
+        {
+          "value": "ZWE",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleISO3",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Specie",
+      "definition_uri": "https://w3id.org/exampleSpecie",
+      "examples": [
+        {
+          "value": "Sheep",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSpecie",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Specie_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Breed",
+      "definition_uri": "https://w3id.org/exampleBreed",
+      "examples": [
+        {
+          "value": "Wiltiper",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleBreed",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Description_Of_Specific_Uses",
+      "definition_uri": "https://w3id.org/exampleDescription_Of_Specific_Uses",
+      "examples": [
+        {
+          "value": "While poultry are used mainly for meat and eggs, they are also commonly used in traditional rituals and as gifts at various occasions throughout the country. Their droppings are used in feed formulations as well as a source of manure.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDescription_Of_Specific_Uses",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Lang",
+      "definition_uri": "https://w3id.org/exampleLang",
+      "examples": [
+        {
+          "value": "eng.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLang",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Description",
+      "definition_uri": "https://w3id.org/exampleDescription",
+      "examples": [
+        {
+          "value": "fat-tailed with similar features to Masai and Tswana sheep.Sabi sheep are haired with multiplicity of colours from black through all shades of brown to pure white",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDescription",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Transboundary_name",
+      "definition_uri": "https://w3id.org/exampleTransboundary_name",
+      "examples": [
+        {
+          "value": "Van Rooy",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleTransboundary_name",
+      "multivalued": true,
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Other_name",
+      "definition_uri": "https://w3id.org/exampleOther_name",
+      "examples": [
+        {
+          "value": "Setswana",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleOther_name",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Uses",
+      "definition_uri": "https://w3id.org/exampleUses",
+      "examples": [
+        {
+          "value": "Meat",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleUses",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Additional_information",
+      "definition_uri": "https://w3id.org/exampleAdditional_information",
+      "examples": [
+        {
+          "value": "no flocks exist",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAdditional_information",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Additional_information_comments",
+      "definition_uri": "https://w3id.org/exampleAdditional_information_comments",
+      "examples": [
+        {
+          "value": "Breed now nonexististant",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAdditional_information_comments",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_cultural_role_comment",
+      "definition_uri": "https://w3id.org/exampleEfabis_cultural_role_comment",
+      "examples": [
+        {
+          "value": "It is ancient native breed of Ukraine.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_cultural_role_comment",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_cultural_value",
+      "definition_uri": "https://w3id.org/exampleEfabis_cultural_value",
+      "examples": [
+        {
+          "value": "The importance of this breed derives from its numerical value and the yield it provides to local farming through the production of milk, meat and wool.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_cultural_value",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Adaptability_to_specific_environment",
+      "definition_uri": "https://w3id.org/exampleAdaptability_to_specific_environment",
+      "examples": [
+        {
+          "value": "The breed is well adapted to semi-arid, sub-tropical climate.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAdaptability_to_specific_environment",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Specific_resistance_or_tolerance",
+      "definition_uri": "https://w3id.org/exampleSpecific_resistance_or_tolerance",
+      "examples": [
+        {
+          "value": "Well adapted to cope with disease and parasite challenges.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSpecific_resistance_or_tolerance",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Specific_reproductive_characteristic",
+      "definition_uri": "https://w3id.org/exampleSpecific_reproductive_characteristic",
+      "examples": [
+        {
+          "value": "The animals are breeding throughout the year. It is stated that the maternal abilities of Sabi sheep are much better than the maternal abilities of South African Mutton Merino.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSpecific_reproductive_characteristic",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Special_characteristic_of_product",
+      "definition_uri": "https://w3id.org/exampleSpecial_characteristic_of_product",
+      "examples": [
+        {
+          "value": "The fat of the tail is used for cooking and preservation. The meat has good flavour and is marbled.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSpecial_characteristic_of_product",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Other_special_qualities",
+      "definition_uri": "https://w3id.org/exampleOther_special_qualities",
+      "examples": [
+        {
+          "value": "These hardy animals survive by grazing and scavenging under extremely harsh conditions (particularly nutrition).",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleOther_special_qualities",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Reference_for_special_qualities",
+      "definition_uri": "https://w3id.org/exampleReference_for_special_qualities",
+      "examples": [
+        {
+          "value": "H.K. Ward; Rhodesia Agricultural Journal, 56, 218-223 (1959). Had, Matopos Research Station I.K. Chifanba (1988) Journal Agric. Sci. Cambridge, 111, 59-65.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleReference_for_special_qualities",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_genetic_features",
+      "definition_uri": "https://w3id.org/exampleEfabis_genetic_features",
+      "examples": [
+        {
+          "value": "For Romanov sheep the high gene frequency of ES-1b is characteristic. AL B allele is prevailing in the population of Romanov sheep. The animals have rare allele of prealbumine - PA 0, which has low frequency. Ttransferrin has 5 alleles - Tf A, Tf B, Tf C, Tf D, Tf E. The most frequently transferrine alleles are Tf C and Tf D.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_genetic_features",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_environmental_role",
+      "definition_uri": "https://w3id.org/exampleEfabis_environmental_role",
+      "examples": [
+        {
+          "value": "can use poor vegetation of ungraded nature pastures and do a landscape more attractive.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_environmental_role",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_adaptability_to_marginal_land",
+      "definition_uri": "https://w3id.org/exampleEfabis_adaptability_to_marginal_land",
+      "examples": [
+        {
+          "value": "High adaptable.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_adaptability_to_marginal_land",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Body_conformation",
+      "definition_uri": "https://w3id.org/exampleBody_conformation",
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleBody_conformation",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Coat_description",
+      "definition_uri": "https://w3id.org/exampleCoat_description",
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleCoat_description",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Coat_quality",
+      "definition_uri": "https://w3id.org/exampleCoat_quality",
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleCoat_quality",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Comb_type",
+      "definition_uri": "https://w3id.org/exampleComb_type",
+      "examples": [
+        {
+          "value": "single",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleComb_type",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Comb_type_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Skin_colour",
+      "definition_uri": "https://w3id.org/exampleSkin_colour",
+      "examples": [
+        {
+          "value": "yellow",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSkin_colour",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Skin_colour_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Shank_and_foot_colour",
+      "definition_uri": "https://w3id.org/exampleShank_and_foot_colour",
+      "examples": [
+        {
+          "value": "yellow",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleShank_and_foot_colour",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Shank_and_foot_colour_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Plumage_colour",
+      "definition_uri": "https://w3id.org/examplePlumage_colour",
+      "examples": [
+        {
+          "value": "various colours",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/examplePlumage_colour",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Plumage_colour_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Pattern_within_feather",
+      "definition_uri": "https://w3id.org/examplePattern_within_feather",
+      "examples": [
+        {
+          "value": "mottled",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/examplePattern_within_feather",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Pattern_within_feather_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Avian_classification",
+      "definition_uri": "https://w3id.org/exampleAvian_classification",
+      "examples": [
+        {
+          "value": "indigenous",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAvian_classification",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Avian_classification_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Color_comments",
+      "definition_uri": "https://w3id.org/exampleColor_comments",
+      "examples": [
+        {
+          "value": "uni coloured: usually black, also white or brown",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleColor_comments",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_main_colour",
+      "definition_uri": "https://w3id.org/exampleEfabis_main_colour",
+      "examples": [
+        {
+          "value": "White.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_main_colour",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_skin_colour",
+      "definition_uri": "https://w3id.org/exampleEfabis_skin_colour",
+      "examples": [
+        {
+          "value": "Skin colour is white with pink shade, but there can be dark spots.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_skin_colour",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_horns_males",
+      "definition_uri": "https://w3id.org/exampleNumber_of_horns_males",
+      "examples": [
+        {
+          "value": "0/2",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_horns_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Number_of_horns_males_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_horns_females",
+      "definition_uri": "https://w3id.org/exampleNumber_of_horns_females",
+      "examples": [
+        {
+          "value": "0/2",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_horns_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Number_of_horns_females_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Horn_shape_size_and_comments",
+      "definition_uri": "https://w3id.org/exampleHorn_shape_size_and_comments",
+      "examples": [
+        {
+          "value": "females are rarely horned",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleHorn_shape_size_and_comments",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Wither_height_males",
+      "definition_uri": "https://w3id.org/exampleWither_height_males",
+      "examples": [
+        {
+          "value": "64",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWither_height_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Wither_height_females",
+      "definition_uri": "https://w3id.org/exampleWither_height_females",
+      "examples": [
+        {
+          "value": "61",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWither_height_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Weight_males",
+      "definition_uri": "https://w3id.org/exampleWeight_males",
+      "examples": [
+        {
+          "value": "90",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWeight_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Weight_females",
+      "definition_uri": "https://w3id.org/exampleWeight_females",
+      "examples": [
+        {
+          "value": "62",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWeight_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Other_specific_visible_traits",
+      "definition_uri": "https://w3id.org/exampleOther_specific_visible_traits",
+      "examples": [
+        {
+          "value": "long legs, fat tail, coarse hair",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleOther_specific_visible_traits",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Breed_classification",
+      "definition_uri": "https://w3id.org/exampleBreed_classification",
+      "examples": [
+        {
+          "value": "Locally adapted",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleBreed_classification",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Breed_classification_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Herdbook",
+      "definition_uri": "https://w3id.org/exampleHerdbook",
+      "examples": [
+        {
+          "value": "y",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleHerdbook",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Herdbook_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Herdbook_established",
+      "definition_uri": "https://w3id.org/exampleHerdbook_established",
+      "examples": [
+        {
+          "value": "1974",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleHerdbook_established",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Domestication_status",
+      "definition_uri": "https://w3id.org/exampleDomestication_status",
+      "examples": [
+        {
+          "value": "domestic",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDomestication_status",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Domestication_status_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Taxonomic_classification",
+      "definition_uri": "https://w3id.org/exampleTaxonomic_classification",
+      "examples": [
+        {
+          "value": "breed",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleTaxonomic_classification",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Taxonomic_classification_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Description_of_origin",
+      "definition_uri": "https://w3id.org/exampleDescription_of_origin",
+      "examples": [
+        {
+          "value": "composite of Wiltshire Horn rams and Blackhead Persian ewes",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDescription_of_origin",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Year_of_origin",
+      "definition_uri": "https://w3id.org/exampleYear_of_origin",
+      "examples": [
+        {
+          "value": "1950",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleYear_of_origin",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Import",
+      "definition_uri": "https://w3id.org/exampleImport",
+      "examples": [
+        {
+          "value": "early 1969 ,Namibia and South Africa",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleImport",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Location_within_country",
+      "definition_uri": "https://w3id.org/exampleLocation_within_country",
+      "examples": [
+        {
+          "value": "Hartley-Gatooma",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLocation_within_country",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Eggs_per_year_AVG",
+      "definition_uri": "https://w3id.org/exampleEggs_per_year_AVG",
+      "examples": [
+        {
+          "value": "200",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEggs_per_year_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "datetime",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Eggs_per_year_MIN",
+      "definition_uri": "https://w3id.org/exampleEggs_per_year_MIN",
+      "examples": [
+        {
+          "value": "170",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEggs_per_year_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Eggs_per_year_MAX",
+      "definition_uri": "https://w3id.org/exampleEggs_per_year_MAX",
+      "examples": [
+        {
+          "value": "200",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEggs_per_year_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Egg_weight",
+      "definition_uri": "https://w3id.org/exampleEgg_weight",
+      "examples": [
+        {
+          "value": "75",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEgg_weight",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Wool_or_hair",
+      "definition_uri": "https://w3id.org/exampleWool_or_hair",
+      "examples": [
+        {
+          "value": "hair",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWool_or_hair",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Wool_or_hair_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Wool_type",
+      "definition_uri": "https://w3id.org/exampleWool_type",
+      "examples": [
+        {
+          "value": "medium",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleWool_type",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Wool_type_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Fleece_weight_AVG",
+      "definition_uri": "https://w3id.org/exampleFleece_weight_AVG",
+      "examples": [
+        {
+          "value": "4.75",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFleece_weight_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Fleece_weight_MIN",
+      "definition_uri": "https://w3id.org/exampleFleece_weight_MIN",
+      "examples": [
+        {
+          "value": "3.22",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFleece_weight_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Fleece_weight_MAX",
+      "definition_uri": "https://w3id.org/exampleFleece_weight_MAX",
+      "examples": [
+        {
+          "value": "6.67",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFleece_weight_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Fibre_diam",
+      "definition_uri": "https://w3id.org/exampleFibre_diam",
+      "examples": [
+        {
+          "value": "22",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFibre_diam",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Management_system",
+      "definition_uri": "https://w3id.org/exampleManagement_system",
+      "examples": [
+        {
+          "value": "semi - intensive",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleManagement_system",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Feeding_of_adults",
+      "definition_uri": "https://w3id.org/exampleFeeding_of_adults",
+      "examples": [
+        {
+          "value": "grazing",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFeeding_of_adults",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Mobility",
+      "definition_uri": "https://w3id.org/exampleMobility",
+      "examples": [
+        {
+          "value": "stationary",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMobility",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_per_year_AVG",
+      "definition_uri": "https://w3id.org/exampleMilk_per_year_AVG",
+      "examples": [
+        {
+          "value": "5170",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_per_year_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_per_year_MIN",
+      "definition_uri": "https://w3id.org/exampleMilk_per_year_MIN",
+      "examples": [
+        {
+          "value": "5000",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_per_year_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_per_year_MAX",
+      "definition_uri": "https://w3id.org/exampleMilk_per_year_MAX",
+      "examples": [
+        {
+          "value": "6000",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_per_year_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Lactation_length_AVG",
+      "definition_uri": "https://w3id.org/exampleLactation_length_AVG",
+      "examples": [
+        {
+          "value": "180",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLactation_length_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Lactation_length_MIN",
+      "definition_uri": "https://w3id.org/exampleLactation_length_MIN",
+      "examples": [
+        {
+          "value": "245",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLactation_length_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Lactation_length_MAX",
+      "definition_uri": "https://w3id.org/exampleLactation_length_MAX",
+      "examples": [
+        {
+          "value": "270",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLactation_length_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_yield_per_lactation_(kg)_AVG",
+      "definition_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG",
+      "examples": [
+        {
+          "value": "50",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_yield_per_lactation_(kg)_MIN",
+      "definition_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN",
+      "examples": [
+        {
+          "value": "213",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_yield_per_lactation_(kg)_MAX",
+      "definition_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX",
+      "examples": [
+        {
+          "value": "234",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_fat_AVG",
+      "definition_uri": "https://w3id.org/exampleMilk_fat_AVG",
+      "examples": [
+        {
+          "value": "7.1",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_fat_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_fat_MIN",
+      "definition_uri": "https://w3id.org/exampleMilk_fat_MIN",
+      "examples": [
+        {
+          "value": "2",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_fat_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_fat_MAX",
+      "definition_uri": "https://w3id.org/exampleMilk_fat_MAX",
+      "examples": [
+        {
+          "value": "3",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_fat_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Milk_per_day",
+      "definition_uri": "https://w3id.org/exampleMilk_per_day",
+      "examples": [
+        {
+          "value": "0.47",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMilk_per_day",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_lactations",
+      "definition_uri": "https://w3id.org/exampleNumber_of_lactations",
+      "examples": [
+        {
+          "value": "21",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_lactations",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_milk_protein_AVG",
+      "definition_uri": "https://w3id.org/exampleEfabis_milk_protein_AVG",
+      "examples": [
+        {
+          "value": "5.97",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_milk_protein_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_milk_protein_MIN",
+      "definition_uri": "https://w3id.org/exampleEfabis_milk_protein_MIN",
+      "examples": [
+        {
+          "value": "4.5",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_milk_protein_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Efabis_milk_protein_MAX",
+      "definition_uri": "https://w3id.org/exampleEfabis_milk_protein_MAX",
+      "examples": [
+        {
+          "value": "3.6",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleEfabis_milk_protein_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Birth_weight_males",
+      "definition_uri": "https://w3id.org/exampleBirth_weight_males",
+      "examples": [
+        {
+          "value": "3.4",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleBirth_weight_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Birth_weight_females",
+      "definition_uri": "https://w3id.org/exampleBirth_weight_females",
+      "examples": [
+        {
+          "value": "3",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleBirth_weight_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_maturity_males",
+      "definition_uri": "https://w3id.org/exampleAge_maturity_males",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_maturity_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_maturity_females",
+      "definition_uri": "https://w3id.org/exampleAge_maturity_females",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_maturity_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_breeding_males",
+      "definition_uri": "https://w3id.org/exampleAge_breeding_males",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_breeding_males",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_breeding_females",
+      "definition_uri": "https://w3id.org/exampleAge_breeding_females",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_breeding_females",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_first_parturition_AVG",
+      "definition_uri": "https://w3id.org/exampleAge_first_parturition_AVG",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_first_parturition_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_first_parturition_MIN",
+      "definition_uri": "https://w3id.org/exampleAge_first_parturition_MIN",
+      "examples": [
+        {
+          "value": "34",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_first_parturition_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Age_first_parturition_MAX",
+      "definition_uri": "https://w3id.org/exampleAge_first_parturition_MAX",
+      "examples": [
+        {
+          "value": "36",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAge_first_parturition_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Parturition_interval_AVG",
+      "definition_uri": "https://w3id.org/exampleParturition_interval_AVG",
+      "examples": [
+        {
+          "value": "365",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleParturition_interval_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Parturition_interval_MIN",
+      "definition_uri": "https://w3id.org/exampleParturition_interval_MIN",
+      "examples": [
+        {
+          "value": "266",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleParturition_interval_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Parturition_interval_MAX",
+      "definition_uri": "https://w3id.org/exampleParturition_interval_MAX",
+      "examples": [
+        {
+          "value": "363",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleParturition_interval_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Length_productive_life",
+      "definition_uri": "https://w3id.org/exampleLength_productive_life",
+      "examples": [
+        {
+          "value": "12",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLength_productive_life",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Daily_gain",
+      "definition_uri": "https://w3id.org/exampleDaily_gain",
+      "examples": [
+        {
+          "value": "148",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDaily_gain",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Carcass_weight",
+      "definition_uri": "https://w3id.org/exampleCarcass_weight",
+      "examples": [
+        {
+          "value": "15.9",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleCarcass_weight",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Dressing_percentage",
+      "definition_uri": "https://w3id.org/exampleDressing_percentage",
+      "examples": [
+        {
+          "value": "46.5",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDressing_percentage",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Performance_data_reference",
+      "definition_uri": "https://w3id.org/examplePerformance_data_reference",
+      "examples": [
+        {
+          "value": "FAO Breed Survey",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/examplePerformance_data_reference",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Managment_conditions_performance_measured",
+      "definition_uri": "https://w3id.org/exampleManagment_conditions_performance_measured",
+      "examples": [
+        {
+          "value": "The value of carcass weight reported here is average for male at 3 pairs of permanent incisors.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleManagment_conditions_performance_measured",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Comments_managment_conditions",
+      "definition_uri": "https://w3id.org/exampleComments_managment_conditions",
+      "examples": [
+        {
+          "value": "Commercial production of lamb and mutton.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleComments_managment_conditions",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Additional_performance_parameters",
+      "definition_uri": "https://w3id.org/exampleAdditional_performance_parameters",
+      "examples": [
+        {
+          "value": "Parece que no se han conducido investigaciiones acerca de Wiltiper.",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleAdditional_performance_parameters",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Litter_size_AVG",
+      "definition_uri": "https://w3id.org/exampleLitter_size_AVG",
+      "examples": [
+        {
+          "value": "1.02",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLitter_size_AVG",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Litter_size_MIN",
+      "definition_uri": "https://w3id.org/exampleLitter_size_MIN",
+      "examples": [
+        {
+          "value": "1.02",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLitter_size_MIN",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Litter_size_MAX",
+      "definition_uri": "https://w3id.org/exampleLitter_size_MAX",
+      "examples": [
+        {
+          "value": "1.31",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLitter_size_MAX",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Geographical_classification",
+      "definition_uri": "https://w3id.org/exampleGeographical_classification",
+      "examples": [
+        {
+          "value": "local",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleGeographical_classification",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Geographical_classification_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Local_cryo_conservation_status",
+      "definition_uri": "https://w3id.org/exampleLocal_cryo_conservation_status",
+      "examples": [
+        {
+          "value": "No Information",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLocal_cryo_conservation_status",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Local_cryo_conservation_status_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Local_Risk",
+      "definition_uri": "https://w3id.org/exampleLocal_Risk",
+      "examples": [
+        {
+          "value": "unknown",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLocal_Risk",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Local_Risk_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Detailed_local_risk_status",
+      "definition_uri": "https://w3id.org/exampleDetailed_local_risk_status",
+      "examples": [
+        {
+          "value": "unknown",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleDetailed_local_risk_status",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Detailed_local_risk_status_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Regional_Transboundary_Risk_(detailed)",
+      "definition_uri": "https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)",
+      "examples": [
+        {
+          "value": "notAtRisk",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "Regional_Transboundary_Risk_(detailed)_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "International_Transboundary_Risk_(detailed)",
+      "definition_uri": "https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)",
+      "examples": [
+        {
+          "value": "notAtRisk",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)",
+      "owner": "Breed",
+      "domain_of": [
+        "Breed"
+      ],
+      "range": "International_Transboundary_Risk_(detailed)_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Indicator_Reference_Number",
+      "definition_uri": "https://w3id.org/exampleIndicator_Reference_Number",
+      "examples": [
+        {
+          "value": "2.5.2",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleIndicator_Reference_Number",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "datetime",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Series_Name",
+      "definition_uri": "https://w3id.org/exampleSeries_Name",
+      "examples": [
+        {
+          "value": "3062",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSeries_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Series_Description",
+      "definition_uri": "https://w3id.org/exampleSeries_Description",
+      "examples": [
+        {
+          "value": "Proportion of local breeds classified as being at risk of extinction",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSeries_Description",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Geo_Area_Code",
+      "definition_uri": "https://w3id.org/exampleGeo_Area_Code",
+      "examples": [
+        {
+          "value": "716",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleGeo_Area_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Geo_Area_Name",
+      "definition_uri": "https://w3id.org/exampleGeo_Area_Name",
+      "examples": [
+        {
+          "value": "Zimbabwe",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleGeo_Area_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Year",
+      "definition_uri": "https://w3id.org/exampleYear",
+      "examples": [
+        {
+          "value": "2021",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleYear",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Reference_Area_Type_(Countries)",
+      "definition_uri": "https://w3id.org/exampleReference_Area_Type_(Countries)",
+      "examples": [
+        {
+          "value": "ZWE",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleReference_Area_Type_(Countries)",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Indicator_value",
+      "definition_uri": "https://w3id.org/exampleIndicator_value",
+      "examples": [
+        {
+          "value": "NA",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleIndicator_value",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Unit_of_Measurement",
+      "definition_uri": "https://w3id.org/exampleUnit_of_Measurement",
+      "examples": [
+        {
+          "value": "PERCENT",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleUnit_of_Measurement",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "Unit_of_Measurement_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Nature",
+      "definition_uri": "https://w3id.org/exampleNature",
+      "examples": [
+        {
+          "value": "NA",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNature",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "Nature_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Reporting_Type",
+      "definition_uri": "https://w3id.org/exampleReporting_Type",
+      "examples": [
+        {
+          "value": "N",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleReporting_Type",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "Reporting_Type_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_local_breeds_(not_extinct)",
+      "definition_uri": "https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)",
+      "examples": [
+        {
+          "value": "4",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_local_breeds_with_unknown_status",
+      "definition_uri": "https://w3id.org/exampleNumber_of_local_breeds_with_unknown_status",
+      "examples": [
+        {
+          "value": "4",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_local_breeds_with_unknown_status",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_local_breeds_at_risk",
+      "definition_uri": "https://w3id.org/exampleNumber_of_local_breeds_at_risk",
+      "examples": [
+        {
+          "value": "0",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_local_breeds_at_risk",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_local_breeds_not_at_risk",
+      "definition_uri": "https://w3id.org/exampleNumber_of_local_breeds_not_at_risk",
+      "examples": [
+        {
+          "value": "0",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_local_breeds_not_at_risk",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Source_Detail",
+      "definition_uri": "https://w3id.org/exampleSource_Detail",
+      "examples": [
+        {
+          "value": "DAD-IS 7.9.2021 http://www.fao.org/dad-is/",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSource_Detail",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "DAD_IS_7.9.2021_http_identifier",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Foot_Notes",
+      "definition_uri": "https://w3id.org/exampleFoot_Notes",
+      "examples": [
+        {
+          "value": "Out of 4 local breeds, 100% are of unknown status",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleFoot_Notes",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "SDG_Region_Code",
+      "definition_uri": "https://w3id.org/exampleSDG_Region_Code",
+      "examples": [
+        {
+          "value": "202",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSDG_Region_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "SDG_Region_Name",
+      "definition_uri": "https://w3id.org/exampleSDG_Region_Name",
+      "examples": [
+        {
+          "value": "Sub-Saharan Africa (M49)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleSDG_Region_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Level_1_Code",
+      "definition_uri": "https://w3id.org/exampleM49_Level_1_Code",
+      "examples": [
+        {
+          "value": "002",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Level_1_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Level_1_Region",
+      "definition_uri": "https://w3id.org/exampleM49_Level_1_Region",
+      "examples": [
+        {
+          "value": "Africa",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Level_1_Region",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "M49_Level-1_Region_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Level_2_Code",
+      "definition_uri": "https://w3id.org/exampleM49_Level_2_Code",
+      "examples": [
+        {
+          "value": "202",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Level_2_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Level_2_Name",
+      "definition_uri": "https://w3id.org/exampleM49_Level_2_Name",
+      "examples": [
+        {
+          "value": "Sub-Saharan Africa (M49)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Level_2_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Intermediate_Code",
+      "definition_uri": "https://w3id.org/exampleM49_Intermediate_Code",
+      "examples": [
+        {
+          "value": "014",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Intermediate_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "M49_Intermediate_Name",
+      "definition_uri": "https://w3id.org/exampleM49_Intermediate_Name",
+      "examples": [
+        {
+          "value": "Eastern Africa (M49)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleM49_Intermediate_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "M49_Intermediate_Name_enum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "MDG_Code",
+      "definition_uri": "https://w3id.org/exampleMDG_Code",
+      "examples": [
+        {
+          "value": "738",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMDG_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "MDG_Regions",
+      "definition_uri": "https://w3id.org/exampleMDG_Regions",
+      "examples": [
+        {
+          "value": "Sub-Saharan Africa (MDG)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleMDG_Regions",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "LDCs_Code",
+      "definition_uri": "https://w3id.org/exampleLDCs_Code",
+      "examples": [
+        {
+          "value": "199",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLDCs_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "LDCs_Name",
+      "definition_uri": "https://w3id.org/exampleLDCs_Name",
+      "examples": [
+        {
+          "value": "Least Developed Countries (LDCs)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLDCs_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "LLDCs_Code",
+      "definition_uri": "https://w3id.org/exampleLLDCs_Code",
+      "examples": [
+        {
+          "value": "432",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLLDCs_Code",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "LLDCs_Name",
+      "definition_uri": "https://w3id.org/exampleLLDCs_Name",
+      "examples": [
+        {
+          "value": "Landlocked developing countries (LLDCs)",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleLLDCs_Name",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_countries_or_territories_in_the_region",
+      "definition_uri": "https://w3id.org/exampleNumber_of_countries_or_territories_in_the_region",
+      "examples": [
+        {
+          "value": "18",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_countries_or_territories_in_the_region",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Number_of_countries_or_territories_with_valid_data",
+      "definition_uri": "https://w3id.org/exampleNumber_of_countries_or_territories_with_valid_data",
+      "examples": [
+        {
+          "value": "8",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/exampleNumber_of_countries_or_territories_with_valid_data",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Percentage_of_countries_or_territories_with_valid_data",
+      "definition_uri": "https://w3id.org/examplePercentage_of_countries_or_territories_with_valid_data",
+      "examples": [
+        {
+          "value": "44.44",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/example",
+      "slot_uri": "https://w3id.org/examplePercentage_of_countries_or_territories_with_valid_data",
+      "owner": "Indicator",
+      "domain_of": [
+        "Indicator"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Breed",
+      "definition_uri": "https://w3id.org/exampleBreed",
+      "from_schema": "https://w3id.org/example",
+      "slots": [
+        "Country",
+        "ISO3",
+        "Specie",
+        "Breed",
+        "Description_Of_Specific_Uses",
+        "Lang",
+        "Description",
+        "Transboundary_name",
+        "Other_name",
+        "Uses",
+        "Additional_information",
+        "Additional_information_comments",
+        "Efabis_cultural_role_comment",
+        "Efabis_cultural_value",
+        "Adaptability_to_specific_environment",
+        "Specific_resistance_or_tolerance",
+        "Specific_reproductive_characteristic",
+        "Special_characteristic_of_product",
+        "Other_special_qualities",
+        "Reference_for_special_qualities",
+        "Efabis_genetic_features",
+        "Efabis_environmental_role",
+        "Efabis_adaptability_to_marginal_land",
+        "Body_conformation",
+        "Coat_description",
+        "Coat_quality",
+        "Comb_type",
+        "Skin_colour",
+        "Shank_and_foot_colour",
+        "Plumage_colour",
+        "Pattern_within_feather",
+        "Avian_classification",
+        "Color_comments",
+        "Efabis_main_colour",
+        "Efabis_skin_colour",
+        "Number_of_horns_males",
+        "Number_of_horns_females",
+        "Horn_shape_size_and_comments",
+        "Wither_height_males",
+        "Wither_height_females",
+        "Weight_males",
+        "Weight_females",
+        "Other_specific_visible_traits",
+        "Breed_classification",
+        "Herdbook",
+        "Herdbook_established",
+        "Domestication_status",
+        "Taxonomic_classification",
+        "Description_of_origin",
+        "Year_of_origin",
+        "Import",
+        "Location_within_country",
+        "Eggs_per_year_AVG",
+        "Eggs_per_year_MIN",
+        "Eggs_per_year_MAX",
+        "Egg_weight",
+        "Wool_or_hair",
+        "Wool_type",
+        "Fleece_weight_AVG",
+        "Fleece_weight_MIN",
+        "Fleece_weight_MAX",
+        "Fibre_diam",
+        "Management_system",
+        "Feeding_of_adults",
+        "Mobility",
+        "Milk_per_year_AVG",
+        "Milk_per_year_MIN",
+        "Milk_per_year_MAX",
+        "Lactation_length_AVG",
+        "Lactation_length_MIN",
+        "Lactation_length_MAX",
+        "Milk_yield_per_lactation_(kg)_AVG",
+        "Milk_yield_per_lactation_(kg)_MIN",
+        "Milk_yield_per_lactation_(kg)_MAX",
+        "Milk_fat_AVG",
+        "Milk_fat_MIN",
+        "Milk_fat_MAX",
+        "Milk_per_day",
+        "Number_of_lactations",
+        "Efabis_milk_protein_AVG",
+        "Efabis_milk_protein_MIN",
+        "Efabis_milk_protein_MAX",
+        "Birth_weight_males",
+        "Birth_weight_females",
+        "Age_maturity_males",
+        "Age_maturity_females",
+        "Age_breeding_males",
+        "Age_breeding_females",
+        "Age_first_parturition_AVG",
+        "Age_first_parturition_MIN",
+        "Age_first_parturition_MAX",
+        "Parturition_interval_AVG",
+        "Parturition_interval_MIN",
+        "Parturition_interval_MAX",
+        "Length_productive_life",
+        "Daily_gain",
+        "Carcass_weight",
+        "Dressing_percentage",
+        "Performance_data_reference",
+        "Managment_conditions_performance_measured",
+        "Comments_managment_conditions",
+        "Additional_performance_parameters",
+        "Litter_size_AVG",
+        "Litter_size_MIN",
+        "Litter_size_MAX",
+        "Geographical_classification",
+        "Local_cryo_conservation_status",
+        "Local_Risk",
+        "Detailed_local_risk_status",
+        "Regional_Transboundary_Risk_(detailed)",
+        "International_Transboundary_Risk_(detailed)"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/exampleBreed",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Indicator",
+      "definition_uri": "https://w3id.org/exampleIndicator",
+      "from_schema": "https://w3id.org/example",
+      "slots": [
+        "Indicator_Reference_Number",
+        "Series_Name",
+        "Series_Description",
+        "Geo_Area_Code",
+        "Geo_Area_Name",
+        "Year",
+        "Reference_Area_Type_(Countries)",
+        "Indicator_value",
+        "Unit_of_Measurement",
+        "Nature",
+        "Reporting_Type",
+        "Number_of_local_breeds_(not_extinct)",
+        "Number_of_local_breeds_with_unknown_status",
+        "Number_of_local_breeds_at_risk",
+        "Number_of_local_breeds_not_at_risk",
+        "Source_Detail",
+        "Foot_Notes",
+        "SDG_Region_Code",
+        "SDG_Region_Name",
+        "M49_Level_1_Code",
+        "M49_Level_1_Region",
+        "M49_Level_2_Code",
+        "M49_Level_2_Name",
+        "M49_Intermediate_Code",
+        "M49_Intermediate_Name",
+        "MDG_Code",
+        "MDG_Regions",
+        "LDCs_Code",
+        "LDCs_Name",
+        "LLDCs_Code",
+        "LLDCs_Name",
+        "Number_of_countries_or_territories_in_the_region",
+        "Number_of_countries_or_territories_with_valid_data",
+        "Percentage_of_countries_or_territories_with_valid_data"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/exampleIndicator",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "domestic_animal_diversity.yaml",
+  "source_file_date": "2021-11-18T16:15:13",
+  "source_file_size": 29550,
+  "generation_date": "2021-11-18T16:15:17",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "domestic_animal_diversity/jsonld/domestic_animal_diversity.context.jsonld",
+    "https://w3id.org/linkml/types.context.jsonld",
+    {
+      "@base": "https://w3id.org/example"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+BASE <https://w3id.org/example/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX linkml: <https://w3id.org/linkml/>
+
+
+<https://w3id.org/exampleDAD-IS7.9.2021HttpIdentifier> xsd:string
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:dateTime
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:Uriorcurie IRI
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+<https://w3id.org/exampleBreed> CLOSED {
+    (  $<https://w3id.org/exampleBreed_tes> (  <https://w3id.org/exampleCountry> @linkml:String ? ;
+          <https://w3id.org/exampleISO3> @linkml:String ? ;
+          <https://w3id.org/exampleSpecie> @<https://w3id.org/exampleSpecieEnum> ? ;
+          <https://w3id.org/exampleBreed> @linkml:String ? ;
+          <https://w3id.org/exampleDescription_Of_Specific_Uses> @linkml:String ? ;
+          <https://w3id.org/exampleLang> @linkml:String ? ;
+          <https://w3id.org/exampleDescription> @linkml:String ? ;
+          <https://w3id.org/exampleTransboundary_name> @linkml:String * ;
+          <https://w3id.org/exampleOther_name> @linkml:String ? ;
+          <https://w3id.org/exampleUses> @linkml:String ? ;
+          <https://w3id.org/exampleAdditional_information> @linkml:String ? ;
+          <https://w3id.org/exampleAdditional_information_comments> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_cultural_role_comment> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_cultural_value> @linkml:String ? ;
+          <https://w3id.org/exampleAdaptability_to_specific_environment> @linkml:String ? ;
+          <https://w3id.org/exampleSpecific_resistance_or_tolerance> @linkml:String ? ;
+          <https://w3id.org/exampleSpecific_reproductive_characteristic> @linkml:String ? ;
+          <https://w3id.org/exampleSpecial_characteristic_of_product> @linkml:String ? ;
+          <https://w3id.org/exampleOther_special_qualities> @linkml:String ? ;
+          <https://w3id.org/exampleReference_for_special_qualities> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_genetic_features> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_environmental_role> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_adaptability_to_marginal_land> @linkml:String ? ;
+          <https://w3id.org/exampleBody_conformation> @linkml:String ? ;
+          <https://w3id.org/exampleCoat_description> @linkml:String ? ;
+          <https://w3id.org/exampleCoat_quality> @linkml:String ? ;
+          <https://w3id.org/exampleComb_type> @<https://w3id.org/exampleCombTypeEnum> ? ;
+          <https://w3id.org/exampleSkin_colour> @<https://w3id.org/exampleSkinColourEnum> ? ;
+          <https://w3id.org/exampleShank_and_foot_colour> @<https://w3id.org/exampleShankAndFootColourEnum> ? ;
+          <https://w3id.org/examplePlumage_colour> @<https://w3id.org/examplePlumageColourEnum> ? ;
+          <https://w3id.org/examplePattern_within_feather> @<https://w3id.org/examplePatternWithinFeatherEnum> ? ;
+          <https://w3id.org/exampleAvian_classification> @<https://w3id.org/exampleAvianClassificationEnum> ? ;
+          <https://w3id.org/exampleColor_comments> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_main_colour> @linkml:String ? ;
+          <https://w3id.org/exampleEfabis_skin_colour> @linkml:String ? ;
+          <https://w3id.org/exampleNumber_of_horns_males> @<https://w3id.org/exampleNumberOfHornsMalesEnum> ? ;
+          <https://w3id.org/exampleNumber_of_horns_females> @<https://w3id.org/exampleNumberOfHornsFemalesEnum> ? ;
+          <https://w3id.org/exampleHorn_shape_size_and_comments> @linkml:String ? ;
+          <https://w3id.org/exampleWither_height_males> @linkml:Float ? ;
+          <https://w3id.org/exampleWither_height_females> @linkml:Float ? ;
+          <https://w3id.org/exampleWeight_males> @linkml:Float ? ;
+          <https://w3id.org/exampleWeight_females> @linkml:Float ? ;
+          <https://w3id.org/exampleOther_specific_visible_traits> @linkml:String ? ;
+          <https://w3id.org/exampleBreed_classification> @<https://w3id.org/exampleBreedClassificationEnum> ? ;
+          <https://w3id.org/exampleHerdbook> @<https://w3id.org/exampleHerdbookEnum> ? ;
+          <https://w3id.org/exampleHerdbook_established> @linkml:String ? ;
+          <https://w3id.org/exampleDomestication_status> @<https://w3id.org/exampleDomesticationStatusEnum> ? ;
+          <https://w3id.org/exampleTaxonomic_classification> @<https://w3id.org/exampleTaxonomicClassificationEnum> ? ;
+          <https://w3id.org/exampleDescription_of_origin> @linkml:String ? ;
+          <https://w3id.org/exampleYear_of_origin> @linkml:String ? ;
+          <https://w3id.org/exampleImport> @linkml:String ? ;
+          <https://w3id.org/exampleLocation_within_country> @linkml:String ? ;
+          <https://w3id.org/exampleEggs_per_year_AVG> @linkml:Datetime ? ;
+          <https://w3id.org/exampleEggs_per_year_MIN> @linkml:Integer ? ;
+          <https://w3id.org/exampleEggs_per_year_MAX> @linkml:Integer ? ;
+          <https://w3id.org/exampleEgg_weight> @linkml:Float ? ;
+          <https://w3id.org/exampleWool_or_hair> @<https://w3id.org/exampleWoolOrHairEnum> ? ;
+          <https://w3id.org/exampleWool_type> @<https://w3id.org/exampleWoolTypeEnum> ? ;
+          <https://w3id.org/exampleFleece_weight_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleFleece_weight_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleFleece_weight_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleFibre_diam> @linkml:Float ? ;
+          <https://w3id.org/exampleManagement_system> @linkml:String ? ;
+          <https://w3id.org/exampleFeeding_of_adults> @linkml:String ? ;
+          <https://w3id.org/exampleMobility> @linkml:String ? ;
+          <https://w3id.org/exampleMilk_per_year_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_per_year_MIN> @linkml:Integer ? ;
+          <https://w3id.org/exampleMilk_per_year_MAX> @linkml:Integer ? ;
+          <https://w3id.org/exampleLactation_length_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleLactation_length_MIN> @linkml:Integer ? ;
+          <https://w3id.org/exampleLactation_length_MAX> @linkml:Integer ? ;
+          <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_fat_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_fat_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_fat_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleMilk_per_day> @linkml:Float ? ;
+          <https://w3id.org/exampleNumber_of_lactations> @linkml:Float ? ;
+          <https://w3id.org/exampleEfabis_milk_protein_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleEfabis_milk_protein_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleEfabis_milk_protein_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleBirth_weight_males> @linkml:Float ? ;
+          <https://w3id.org/exampleBirth_weight_females> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_maturity_males> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_maturity_females> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_breeding_males> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_breeding_females> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_first_parturition_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_first_parturition_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleAge_first_parturition_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleParturition_interval_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleParturition_interval_MIN> @linkml:Integer ? ;
+          <https://w3id.org/exampleParturition_interval_MAX> @linkml:Integer ? ;
+          <https://w3id.org/exampleLength_productive_life> @linkml:Float ? ;
+          <https://w3id.org/exampleDaily_gain> @linkml:Float ? ;
+          <https://w3id.org/exampleCarcass_weight> @linkml:Float ? ;
+          <https://w3id.org/exampleDressing_percentage> @linkml:Float ? ;
+          <https://w3id.org/examplePerformance_data_reference> @linkml:String ? ;
+          <https://w3id.org/exampleManagment_conditions_performance_measured> @linkml:String ? ;
+          <https://w3id.org/exampleComments_managment_conditions> @linkml:String ? ;
+          <https://w3id.org/exampleAdditional_performance_parameters> @linkml:String ? ;
+          <https://w3id.org/exampleLitter_size_AVG> @linkml:Float ? ;
+          <https://w3id.org/exampleLitter_size_MIN> @linkml:Float ? ;
+          <https://w3id.org/exampleLitter_size_MAX> @linkml:Float ? ;
+          <https://w3id.org/exampleGeographical_classification> @<https://w3id.org/exampleGeographicalClassificationEnum> ? ;
+          <https://w3id.org/exampleLocal_cryo_conservation_status> @<https://w3id.org/exampleLocalCryoConservationStatusEnum> ? ;
+          <https://w3id.org/exampleLocal_Risk> @<https://w3id.org/exampleLocalRiskEnum> ? ;
+          <https://w3id.org/exampleDetailed_local_risk_status> @<https://w3id.org/exampleDetailedLocalRiskStatusEnum> ? ;
+          <https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)>
+          @<https://w3id.org/exampleRegionalTransboundaryRisk(detailed)Enum> ? ;
+          <https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)>
+          @<https://w3id.org/exampleInternationalTransboundaryRisk(detailed)Enum> ?
+       ) ;
+       rdf:type [ <https://w3id.org/exampleBreed> ] ?
+    )
+}
+
+<https://w3id.org/exampleIndicator> CLOSED {
+    (  $<https://w3id.org/exampleIndicator_tes> (  <https://w3id.org/exampleIndicator_Reference_Number> @linkml:Datetime ? ;
+          <https://w3id.org/exampleSeries_Name> @linkml:Integer ? ;
+          <https://w3id.org/exampleSeries_Description> @linkml:String ? ;
+          <https://w3id.org/exampleGeo_Area_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleGeo_Area_Name> @linkml:String ? ;
+          <https://w3id.org/exampleYear> @linkml:Integer ? ;
+          <https://w3id.org/exampleReference_Area_Type_(Countries)> @linkml:String ? ;
+          <https://w3id.org/exampleIndicator_value> @linkml:String ? ;
+          <https://w3id.org/exampleUnit_of_Measurement> @<https://w3id.org/exampleUnitOfMeasurementEnum> ? ;
+          <https://w3id.org/exampleNature> @<https://w3id.org/exampleNatureEnum> ? ;
+          <https://w3id.org/exampleReporting_Type> @<https://w3id.org/exampleReportingTypeEnum> ? ;
+          <https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)> @linkml:Integer ? ;
+          <https://w3id.org/exampleNumber_of_local_breeds_with_unknown_status> @linkml:Integer ? ;
+          <https://w3id.org/exampleNumber_of_local_breeds_at_risk> @linkml:Integer ? ;
+          <https://w3id.org/exampleNumber_of_local_breeds_not_at_risk> @linkml:Integer ? ;
+          <https://w3id.org/exampleSource_Detail> @<https://w3id.org/exampleDAD-IS7.9.2021HttpIdentifier> ? ;
+          <https://w3id.org/exampleFoot_Notes> @linkml:String ? ;
+          <https://w3id.org/exampleSDG_Region_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleSDG_Region_Name> @linkml:String ? ;
+          <https://w3id.org/exampleM49_Level_1_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleM49_Level_1_Region> @<https://w3id.org/exampleM49Level-1RegionEnum> ? ;
+          <https://w3id.org/exampleM49_Level_2_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleM49_Level_2_Name> @linkml:String ? ;
+          <https://w3id.org/exampleM49_Intermediate_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleM49_Intermediate_Name> @<https://w3id.org/exampleM49IntermediateNameEnum> ? ;
+          <https://w3id.org/exampleMDG_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleMDG_Regions> @linkml:String ? ;
+          <https://w3id.org/exampleLDCs_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleLDCs_Name> @linkml:String ? ;
+          <https://w3id.org/exampleLLDCs_Code> @linkml:Integer ? ;
+          <https://w3id.org/exampleLLDCs_Name> @linkml:String ? ;
+          <https://w3id.org/exampleNumber_of_countries_or_territories_in_the_region> @linkml:Integer ? ;
+          <https://w3id.org/exampleNumber_of_countries_or_territories_with_valid_data> @linkml:Integer ? ;
+          <https://w3id.org/examplePercentage_of_countries_or_territories_with_valid_data> @linkml:Float ?
+       ) ;
+       rdf:type [ <https://w3id.org/exampleIndicator> ] ?
+    )
+}
+
+

@@ -1,0 +1,866 @@
+{
+   "$defs": {
+      "AvianClassificationEnum": {
+         "description": "",
+         "enum": [
+            "indigenous",
+            "fancy",
+            "middle level",
+            "Indigenous",
+            "laboratory",
+            "Industrial",
+            "Middle level",
+            "industrial",
+            "Fancy",
+            "Laboratory"
+         ],
+         "title": "AvianClassificationEnum",
+         "type": "string"
+      },
+      "Breed": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "Adaptability_to_specific_environment": {
+               "type": "string"
+            },
+            "Additional_information": {
+               "type": "string"
+            },
+            "Additional_information_comments": {
+               "type": "string"
+            },
+            "Additional_performance_parameters": {
+               "type": "string"
+            },
+            "Age_breeding_females": {
+               "type": "number"
+            },
+            "Age_breeding_males": {
+               "type": "number"
+            },
+            "Age_first_parturition_AVG": {
+               "type": "number"
+            },
+            "Age_first_parturition_MAX": {
+               "type": "number"
+            },
+            "Age_first_parturition_MIN": {
+               "type": "number"
+            },
+            "Age_maturity_females": {
+               "type": "number"
+            },
+            "Age_maturity_males": {
+               "type": "number"
+            },
+            "Avian_classification": {
+               "$ref": "#/$defs/AvianClassificationEnum"
+            },
+            "Birth_weight_females": {
+               "type": "number"
+            },
+            "Birth_weight_males": {
+               "type": "number"
+            },
+            "Body_conformation": {
+               "type": "string"
+            },
+            "Breed": {
+               "type": "string"
+            },
+            "Breed_classification": {
+               "$ref": "#/$defs/BreedClassificationEnum"
+            },
+            "Carcass_weight": {
+               "type": "number"
+            },
+            "Coat_description": {
+               "type": "string"
+            },
+            "Coat_quality": {
+               "type": "string"
+            },
+            "Color_comments": {
+               "type": "string"
+            },
+            "Comb_type": {
+               "$ref": "#/$defs/CombTypeEnum"
+            },
+            "Comments_managment_conditions": {
+               "type": "string"
+            },
+            "Country": {
+               "type": "string"
+            },
+            "Daily_gain": {
+               "type": "number"
+            },
+            "Description": {
+               "type": "string"
+            },
+            "Description_Of_Specific_Uses": {
+               "type": "string"
+            },
+            "Description_of_origin": {
+               "type": "string"
+            },
+            "Detailed_local_risk_status": {
+               "$ref": "#/$defs/DetailedLocalRiskStatusEnum"
+            },
+            "Domestication_status": {
+               "$ref": "#/$defs/DomesticationStatusEnum"
+            },
+            "Dressing_percentage": {
+               "type": "number"
+            },
+            "Efabis_adaptability_to_marginal_land": {
+               "type": "string"
+            },
+            "Efabis_cultural_role_comment": {
+               "type": "string"
+            },
+            "Efabis_cultural_value": {
+               "type": "string"
+            },
+            "Efabis_environmental_role": {
+               "type": "string"
+            },
+            "Efabis_genetic_features": {
+               "type": "string"
+            },
+            "Efabis_main_colour": {
+               "type": "string"
+            },
+            "Efabis_milk_protein_AVG": {
+               "type": "number"
+            },
+            "Efabis_milk_protein_MAX": {
+               "type": "number"
+            },
+            "Efabis_milk_protein_MIN": {
+               "type": "number"
+            },
+            "Efabis_skin_colour": {
+               "type": "string"
+            },
+            "Egg_weight": {
+               "type": "number"
+            },
+            "Eggs_per_year_AVG": {
+               "format": "date-time",
+               "type": "string"
+            },
+            "Eggs_per_year_MAX": {
+               "type": "integer"
+            },
+            "Eggs_per_year_MIN": {
+               "type": "integer"
+            },
+            "Feeding_of_adults": {
+               "type": "string"
+            },
+            "Fibre_diam": {
+               "type": "number"
+            },
+            "Fleece_weight_AVG": {
+               "type": "number"
+            },
+            "Fleece_weight_MAX": {
+               "type": "number"
+            },
+            "Fleece_weight_MIN": {
+               "type": "number"
+            },
+            "Geographical_classification": {
+               "$ref": "#/$defs/GeographicalClassificationEnum"
+            },
+            "Herdbook": {
+               "$ref": "#/$defs/HerdbookEnum"
+            },
+            "Herdbook_established": {
+               "type": "string"
+            },
+            "Horn_shape_size_and_comments": {
+               "type": "string"
+            },
+            "ISO3": {
+               "type": "string"
+            },
+            "Import": {
+               "type": "string"
+            },
+            "International_Transboundary_Risk_(detailed)": {
+               "$ref": "#/$defs/InternationalTransboundaryRisk(detailed)Enum"
+            },
+            "Lactation_length_AVG": {
+               "type": "number"
+            },
+            "Lactation_length_MAX": {
+               "type": "integer"
+            },
+            "Lactation_length_MIN": {
+               "type": "integer"
+            },
+            "Lang": {
+               "type": "string"
+            },
+            "Length_productive_life": {
+               "type": "number"
+            },
+            "Litter_size_AVG": {
+               "type": "number"
+            },
+            "Litter_size_MAX": {
+               "type": "number"
+            },
+            "Litter_size_MIN": {
+               "type": "number"
+            },
+            "Local_Risk": {
+               "$ref": "#/$defs/LocalRiskEnum"
+            },
+            "Local_cryo_conservation_status": {
+               "$ref": "#/$defs/LocalCryoConservationStatusEnum"
+            },
+            "Location_within_country": {
+               "type": "string"
+            },
+            "Management_system": {
+               "type": "string"
+            },
+            "Managment_conditions_performance_measured": {
+               "type": "string"
+            },
+            "Milk_fat_AVG": {
+               "type": "number"
+            },
+            "Milk_fat_MAX": {
+               "type": "number"
+            },
+            "Milk_fat_MIN": {
+               "type": "number"
+            },
+            "Milk_per_day": {
+               "type": "number"
+            },
+            "Milk_per_year_AVG": {
+               "type": "number"
+            },
+            "Milk_per_year_MAX": {
+               "type": "integer"
+            },
+            "Milk_per_year_MIN": {
+               "type": "integer"
+            },
+            "Milk_yield_per_lactation_(kg)_AVG": {
+               "type": "number"
+            },
+            "Milk_yield_per_lactation_(kg)_MAX": {
+               "type": "number"
+            },
+            "Milk_yield_per_lactation_(kg)_MIN": {
+               "type": "number"
+            },
+            "Mobility": {
+               "type": "string"
+            },
+            "Number_of_horns_females": {
+               "$ref": "#/$defs/NumberOfHornsFemalesEnum"
+            },
+            "Number_of_horns_males": {
+               "$ref": "#/$defs/NumberOfHornsMalesEnum"
+            },
+            "Number_of_lactations": {
+               "type": "number"
+            },
+            "Other_name": {
+               "type": "string"
+            },
+            "Other_special_qualities": {
+               "type": "string"
+            },
+            "Other_specific_visible_traits": {
+               "type": "string"
+            },
+            "Parturition_interval_AVG": {
+               "type": "number"
+            },
+            "Parturition_interval_MAX": {
+               "type": "integer"
+            },
+            "Parturition_interval_MIN": {
+               "type": "integer"
+            },
+            "Pattern_within_feather": {
+               "$ref": "#/$defs/PatternWithinFeatherEnum"
+            },
+            "Performance_data_reference": {
+               "type": "string"
+            },
+            "Plumage_colour": {
+               "$ref": "#/$defs/PlumageColourEnum"
+            },
+            "Reference_for_special_qualities": {
+               "type": "string"
+            },
+            "Regional_Transboundary_Risk_(detailed)": {
+               "$ref": "#/$defs/RegionalTransboundaryRisk(detailed)Enum"
+            },
+            "Shank_and_foot_colour": {
+               "$ref": "#/$defs/ShankAndFootColourEnum"
+            },
+            "Skin_colour": {
+               "$ref": "#/$defs/SkinColourEnum"
+            },
+            "Special_characteristic_of_product": {
+               "type": "string"
+            },
+            "Specie": {
+               "$ref": "#/$defs/SpecieEnum"
+            },
+            "Specific_reproductive_characteristic": {
+               "type": "string"
+            },
+            "Specific_resistance_or_tolerance": {
+               "type": "string"
+            },
+            "Taxonomic_classification": {
+               "$ref": "#/$defs/TaxonomicClassificationEnum"
+            },
+            "Transboundary_name": {
+               "items": {
+                  "type": "string"
+               },
+               "type": "array"
+            },
+            "Uses": {
+               "type": "string"
+            },
+            "Weight_females": {
+               "type": "number"
+            },
+            "Weight_males": {
+               "type": "number"
+            },
+            "Wither_height_females": {
+               "type": "number"
+            },
+            "Wither_height_males": {
+               "type": "number"
+            },
+            "Wool_or_hair": {
+               "$ref": "#/$defs/WoolOrHairEnum"
+            },
+            "Wool_type": {
+               "$ref": "#/$defs/WoolTypeEnum"
+            },
+            "Year_of_origin": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Breed",
+         "type": "object"
+      },
+      "BreedClassificationEnum": {
+         "description": "",
+         "enum": [
+            "Exotic",
+            "Native",
+            "Locally adapted"
+         ],
+         "title": "BreedClassificationEnum",
+         "type": "string"
+      },
+      "CombTypeEnum": {
+         "description": "",
+         "enum": [
+            "walnut",
+            "Duplex or V-shaped",
+            "Single",
+            "pea",
+            "duplex or V-shaped",
+            "rose",
+            "single"
+         ],
+         "title": "CombTypeEnum",
+         "type": "string"
+      },
+      "DetailedLocalRiskStatusEnum": {
+         "description": "",
+         "enum": [
+            "endangered",
+            "vulnerable",
+            "notAtRisk",
+            "extinct",
+            "endangeredMaintained",
+            "critical",
+            "cryoConservedOnly",
+            "unknown",
+            "criticalMaintained"
+         ],
+         "title": "DetailedLocalRiskStatusEnum",
+         "type": "string"
+      },
+      "DomesticationStatusEnum": {
+         "description": "",
+         "enum": [
+            "Feral",
+            "feral",
+            "wild",
+            "domestic",
+            "Wild",
+            "Domestic"
+         ],
+         "title": "DomesticationStatusEnum",
+         "type": "string"
+      },
+      "GeographicalClassificationEnum": {
+         "description": "",
+         "enum": [
+            "international",
+            "local",
+            "regional"
+         ],
+         "title": "GeographicalClassificationEnum",
+         "type": "string"
+      },
+      "HerdbookEnum": {
+         "description": "",
+         "enum": [
+            "n",
+            "Y",
+            "y"
+         ],
+         "title": "HerdbookEnum",
+         "type": "string"
+      },
+      "Indicator": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "Foot_Notes": {
+               "type": "string"
+            },
+            "Geo_Area_Code": {
+               "type": "integer"
+            },
+            "Geo_Area_Name": {
+               "type": "string"
+            },
+            "Indicator_Reference_Number": {
+               "format": "date-time",
+               "type": "string"
+            },
+            "Indicator_value": {
+               "type": "string"
+            },
+            "LDCs_Code": {
+               "type": "integer"
+            },
+            "LDCs_Name": {
+               "type": "string"
+            },
+            "LLDCs_Code": {
+               "type": "integer"
+            },
+            "LLDCs_Name": {
+               "type": "string"
+            },
+            "M49_Intermediate_Code": {
+               "type": "integer"
+            },
+            "M49_Intermediate_Name": {
+               "$ref": "#/$defs/M49IntermediateNameEnum"
+            },
+            "M49_Level_1_Code": {
+               "type": "integer"
+            },
+            "M49_Level_1_Region": {
+               "$ref": "#/$defs/M49Level-1RegionEnum"
+            },
+            "M49_Level_2_Code": {
+               "type": "integer"
+            },
+            "M49_Level_2_Name": {
+               "type": "string"
+            },
+            "MDG_Code": {
+               "type": "integer"
+            },
+            "MDG_Regions": {
+               "type": "string"
+            },
+            "Nature": {
+               "$ref": "#/$defs/NatureEnum"
+            },
+            "Number_of_countries_or_territories_in_the_region": {
+               "type": "integer"
+            },
+            "Number_of_countries_or_territories_with_valid_data": {
+               "type": "integer"
+            },
+            "Number_of_local_breeds_(not_extinct)": {
+               "type": "integer"
+            },
+            "Number_of_local_breeds_at_risk": {
+               "type": "integer"
+            },
+            "Number_of_local_breeds_not_at_risk": {
+               "type": "integer"
+            },
+            "Number_of_local_breeds_with_unknown_status": {
+               "type": "integer"
+            },
+            "Percentage_of_countries_or_territories_with_valid_data": {
+               "type": "number"
+            },
+            "Reference_Area_Type_(Countries)": {
+               "type": "string"
+            },
+            "Reporting_Type": {
+               "$ref": "#/$defs/ReportingTypeEnum"
+            },
+            "SDG_Region_Code": {
+               "type": "integer"
+            },
+            "SDG_Region_Name": {
+               "type": "string"
+            },
+            "Series_Description": {
+               "type": "string"
+            },
+            "Series_Name": {
+               "type": "integer"
+            },
+            "Source_Detail": {
+               "type": "string"
+            },
+            "Unit_of_Measurement": {
+               "$ref": "#/$defs/UnitOfMeasurementEnum"
+            },
+            "Year": {
+               "type": "integer"
+            }
+         },
+         "required": [],
+         "title": "Indicator",
+         "type": "object"
+      },
+      "InternationalTransboundaryRisk(detailed)Enum": {
+         "description": "",
+         "enum": [
+            "endangered",
+            "vulnerable",
+            "notAtRisk",
+            "critical",
+            "unknown"
+         ],
+         "title": "InternationalTransboundaryRisk(detailed)Enum",
+         "type": "string"
+      },
+      "LocalCryoConservationStatusEnum": {
+         "description": "",
+         "enum": [
+            "No Information",
+            "Sufficient",
+            "No Material",
+            "Not Sufficient"
+         ],
+         "title": "LocalCryoConservationStatusEnum",
+         "type": "string"
+      },
+      "LocalRiskEnum": {
+         "description": "",
+         "enum": [
+            "notAtRisk",
+            "extinct",
+            "atRisk",
+            "cryoConservedOnly",
+            "unknown"
+         ],
+         "title": "LocalRiskEnum",
+         "type": "string"
+      },
+      "M49IntermediateNameEnum": {
+         "description": "",
+         "enum": [
+            "Middle Africa (M49)",
+            "Central America (M49)",
+            "Eastern Africa (M49)",
+            "Southern Africa (M49)",
+            "Caribbean (M49)",
+            "South America (M49)",
+            "Western Africa (M49)"
+         ],
+         "title": "M49IntermediateNameEnum",
+         "type": "string"
+      },
+      "M49Level-1RegionEnum": {
+         "description": "",
+         "enum": [
+            "Africa",
+            "Oceania (M49)",
+            "Americas",
+            "Europe (M49)",
+            "Asia (M49)"
+         ],
+         "title": "M49Level-1RegionEnum",
+         "type": "string"
+      },
+      "NatureEnum": {
+         "description": "",
+         "enum": [
+            "NA",
+            "G",
+            "C",
+            "E"
+         ],
+         "title": "NatureEnum",
+         "type": "string"
+      },
+      "NumberOfHornsFemalesEnum": {
+         "description": "",
+         "enum": [
+            "0 / 2 / 4",
+            "4",
+            "2/4",
+            "0/2",
+            "2",
+            "0 / 2",
+            "0",
+            "0/2/4"
+         ],
+         "title": "NumberOfHornsFemalesEnum",
+         "type": "string"
+      },
+      "NumberOfHornsMalesEnum": {
+         "description": "",
+         "enum": [
+            "0 / 2 / 4",
+            "4",
+            "2/4",
+            "0/2",
+            "2",
+            "0 / 2",
+            "0",
+            "0/2/4"
+         ],
+         "title": "NumberOfHornsMalesEnum",
+         "type": "string"
+      },
+      "PatternWithinFeatherEnum": {
+         "description": "",
+         "enum": [
+            "barred, autosomal",
+            "mottled",
+            "Barred, sex-linked",
+            "cuckoo",
+            "barred, sex-linked",
+            "spangled",
+            "Barred, Sex-linked",
+            "No special pattern",
+            "pencilled",
+            "no special pattern",
+            "laced"
+         ],
+         "title": "PatternWithinFeatherEnum",
+         "type": "string"
+      },
+      "PlumageColourEnum": {
+         "description": "",
+         "enum": [
+            "Grey and White",
+            "White",
+            "Brown",
+            "grey",
+            "red and brown",
+            "yellow",
+            "silver colombian",
+            "red and black",
+            "wild type and variants",
+            "white and brown",
+            "white and blue",
+            "Grey and white",
+            "Red and Black",
+            "Various color",
+            "various colours",
+            "self-black",
+            "self-white",
+            "gold-colombian",
+            "brown",
+            "red",
+            "white",
+            "grey and white"
+         ],
+         "title": "PlumageColourEnum",
+         "type": "string"
+      },
+      "RegionalTransboundaryRisk(detailed)Enum": {
+         "description": "",
+         "enum": [
+            "endangered",
+            "vulnerable",
+            "notAtRisk",
+            "extinct",
+            "critical",
+            "unknown"
+         ],
+         "title": "RegionalTransboundaryRisk(detailed)Enum",
+         "type": "string"
+      },
+      "ReportingTypeEnum": {
+         "description": "",
+         "enum": [
+            "R",
+            "G",
+            "N"
+         ],
+         "title": "ReportingTypeEnum",
+         "type": "string"
+      },
+      "ShankAndFootColourEnum": {
+         "description": "",
+         "enum": [
+            "green",
+            "reddish",
+            "white pinkish",
+            "various",
+            "Green",
+            "Reddish",
+            "grey",
+            "black",
+            "blue",
+            "yellow",
+            "Yellow",
+            "orange",
+            "Grey",
+            "Orange",
+            "white",
+            "Black"
+         ],
+         "title": "ShankAndFootColourEnum",
+         "type": "string"
+      },
+      "SkinColourEnum": {
+         "description": "",
+         "enum": [
+            "Blue-Black",
+            "blue-black",
+            "White",
+            "yellow",
+            "Yellow",
+            "white"
+         ],
+         "title": "SkinColourEnum",
+         "type": "string"
+      },
+      "SpecieEnum": {
+         "description": "",
+         "enum": [
+            "Horse",
+            "Deer",
+            "Rabbit",
+            "Llama",
+            "Peacock",
+            "Pigeon",
+            "Cattle",
+            "Goat",
+            "Partridge",
+            "Quail",
+            "Ass",
+            "Pheasant",
+            "Alpaca",
+            "Goose (domestic)",
+            "Dromedary Bactrian Camel",
+            "Ostrich",
+            "Guinea pig",
+            "Buffalo",
+            "American Bison",
+            "Guanaco",
+            "Chicken",
+            "Guinea fowl",
+            "Nandu",
+            "Duck(domestic) Muscovy duck",
+            "Dromedary",
+            "Yak (domestic)",
+            "Bactrian camel",
+            "Sheep",
+            "Muscovy duck",
+            "Turkey",
+            "Swallow",
+            "Duck (domestic)",
+            "Cassowary",
+            "Emu",
+            "Dog",
+            "Vicu\u00f1a",
+            "Pig"
+         ],
+         "title": "SpecieEnum",
+         "type": "string"
+      },
+      "TaxonomicClassificationEnum": {
+         "description": "",
+         "enum": [
+            "Breed",
+            "breed",
+            "mongrel (Birds)",
+            "variety",
+            "Variety",
+            "Mongrel",
+            "strain",
+            "Strain",
+            "Species",
+            "line",
+            "Line",
+            "species"
+         ],
+         "title": "TaxonomicClassificationEnum",
+         "type": "string"
+      },
+      "UnitOfMeasurementEnum": {
+         "description": "",
+         "enum": [
+            "PERCENT"
+         ],
+         "title": "UnitOfMeasurementEnum",
+         "type": "string"
+      },
+      "WoolOrHairEnum": {
+         "description": "",
+         "enum": [
+            "hair",
+            "Wool",
+            "wool",
+            "Hair"
+         ],
+         "title": "WoolOrHairEnum",
+         "type": "string"
+      },
+      "WoolTypeEnum": {
+         "description": "",
+         "enum": [
+            "medium",
+            "Medium",
+            "Cashmere",
+            "cashmere",
+            "Coarse / Carpet",
+            "Fine",
+            "mohair/angora",
+            "Mohair / Angora",
+            "coarse/carpet",
+            "fine"
+         ],
+         "title": "WoolTypeEnum",
+         "type": "string"
+      }
+   },
+   "$id": "https://w3id.org/example",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "additionalProperties": true,
+   "properties": {},
+   "required": [],
+   "title": "example",
+   "type": "object"
+}

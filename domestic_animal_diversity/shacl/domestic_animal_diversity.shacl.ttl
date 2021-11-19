@@ -1,0 +1,474 @@
+@prefix ns1: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/exampleIndicator> a ns1:NodeShape ;
+    ns1:closed true ;
+    ns1:ignoredProperties ( rdf:type ) ;
+    ns1:property [ ns1:maxCount 1 ;
+            ns1:order 28 ;
+            ns1:path <https://w3id.org/exampleLDCs_Name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 19 ;
+            ns1:path <https://w3id.org/exampleM49_Level_1_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 6 ;
+            ns1:path <https://w3id.org/exampleReference_Area_Type_(Countries)> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 33 ;
+            ns1:path <https://w3id.org/examplePercentage_of_countries_or_territories_with_valid_data> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 7 ;
+            ns1:path <https://w3id.org/exampleIndicator_value> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 31 ;
+            ns1:path <https://w3id.org/exampleNumber_of_countries_or_territories_in_the_region> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 15 ;
+            ns1:path <https://w3id.org/exampleSource_Detail> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 12 ;
+            ns1:path <https://w3id.org/exampleNumber_of_local_breeds_with_unknown_status> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 27 ;
+            ns1:path <https://w3id.org/exampleLDCs_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 29 ;
+            ns1:path <https://w3id.org/exampleLLDCs_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 0 ;
+            ns1:path <https://w3id.org/exampleIndicator_Reference_Number> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 13 ;
+            ns1:path <https://w3id.org/exampleNumber_of_local_breeds_at_risk> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 17 ;
+            ns1:path <https://w3id.org/exampleSDG_Region_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 26 ;
+            ns1:path <https://w3id.org/exampleMDG_Regions> ],
+        [ ns1:in ( "Africa" "Oceania (M49)" "Americas" "Europe (M49)" "Asia (M49)" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 20 ;
+            ns1:path <https://w3id.org/exampleM49_Level_1_Region> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 30 ;
+            ns1:path <https://w3id.org/exampleLLDCs_Name> ],
+        [ ns1:in ( "PERCENT" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 8 ;
+            ns1:path <https://w3id.org/exampleUnit_of_Measurement> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 5 ;
+            ns1:path <https://w3id.org/exampleYear> ],
+        [ ns1:in ( "NA" "G" "C" "E" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 9 ;
+            ns1:path <https://w3id.org/exampleNature> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 25 ;
+            ns1:path <https://w3id.org/exampleMDG_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 21 ;
+            ns1:path <https://w3id.org/exampleM49_Level_2_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 32 ;
+            ns1:path <https://w3id.org/exampleNumber_of_countries_or_territories_with_valid_data> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 2 ;
+            ns1:path <https://w3id.org/exampleSeries_Description> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 18 ;
+            ns1:path <https://w3id.org/exampleSDG_Region_Name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 16 ;
+            ns1:path <https://w3id.org/exampleFoot_Notes> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 23 ;
+            ns1:path <https://w3id.org/exampleM49_Intermediate_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 3 ;
+            ns1:path <https://w3id.org/exampleGeo_Area_Code> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 4 ;
+            ns1:path <https://w3id.org/exampleGeo_Area_Name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 22 ;
+            ns1:path <https://w3id.org/exampleM49_Level_2_Name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 1 ;
+            ns1:path <https://w3id.org/exampleSeries_Name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 11 ;
+            ns1:path <https://w3id.org/exampleNumber_of_local_breeds_(not_extinct)> ],
+        [ ns1:in ( "Middle Africa (M49)" "Central America (M49)" "Eastern Africa (M49)" "Southern Africa (M49)" "Caribbean (M49)" "South America (M49)" "Western Africa (M49)" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 24 ;
+            ns1:path <https://w3id.org/exampleM49_Intermediate_Name> ],
+        [ ns1:in ( "R" "G" "N" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 10 ;
+            ns1:path <https://w3id.org/exampleReporting_Type> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 14 ;
+            ns1:path <https://w3id.org/exampleNumber_of_local_breeds_not_at_risk> ] ;
+    ns1:targetClass <https://w3id.org/exampleIndicator> .
+
+<https://w3id.org/exampleBreed> a ns1:NodeShape ;
+    ns1:closed true ;
+    ns1:ignoredProperties ( rdf:type ) ;
+    ns1:property [ ns1:maxCount 1 ;
+            ns1:order 45 ;
+            ns1:path <https://w3id.org/exampleHerdbook_established> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 98 ;
+            ns1:path <https://w3id.org/examplePerformance_data_reference> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 15 ;
+            ns1:path <https://w3id.org/exampleSpecific_resistance_or_tolerance> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 79 ;
+            ns1:path <https://w3id.org/exampleEfabis_milk_protein_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 80 ;
+            ns1:path <https://w3id.org/exampleEfabis_milk_protein_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 19 ;
+            ns1:path <https://w3id.org/exampleReference_for_special_qualities> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 33 ;
+            ns1:path <https://w3id.org/exampleEfabis_main_colour> ],
+        [ ns1:in ( "No Information" "Sufficient" "No Material" "Not Sufficient" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 106 ;
+            ns1:path <https://w3id.org/exampleLocal_cryo_conservation_status> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 60 ;
+            ns1:path <https://w3id.org/exampleFleece_weight_MAX> ],
+        [ ns1:in ( "hair" "Wool" "wool" "Hair" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 56 ;
+            ns1:path <https://w3id.org/exampleWool_or_hair> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 40 ;
+            ns1:path <https://w3id.org/exampleWeight_males> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 62 ;
+            ns1:path <https://w3id.org/exampleManagement_system> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 81 ;
+            ns1:path <https://w3id.org/exampleEfabis_milk_protein_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 8 ;
+            ns1:path <https://w3id.org/exampleOther_name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 96 ;
+            ns1:path <https://w3id.org/exampleCarcass_weight> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 73 ;
+            ns1:path <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 32 ;
+            ns1:path <https://w3id.org/exampleColor_comments> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 52 ;
+            ns1:path <https://w3id.org/exampleEggs_per_year_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 90 ;
+            ns1:path <https://w3id.org/exampleAge_first_parturition_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 11 ;
+            ns1:path <https://w3id.org/exampleAdditional_information_comments> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 86 ;
+            ns1:path <https://w3id.org/exampleAge_breeding_males> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 66 ;
+            ns1:path <https://w3id.org/exampleMilk_per_year_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 49 ;
+            ns1:path <https://w3id.org/exampleYear_of_origin> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 102 ;
+            ns1:path <https://w3id.org/exampleLitter_size_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 100 ;
+            ns1:path <https://w3id.org/exampleComments_managment_conditions> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 89 ;
+            ns1:path <https://w3id.org/exampleAge_first_parturition_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 38 ;
+            ns1:path <https://w3id.org/exampleWither_height_males> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 14 ;
+            ns1:path <https://w3id.org/exampleAdaptability_to_specific_environment> ],
+        [ ns1:in ( "Horse" "Deer" "Rabbit" "Llama" "Peacock" "Pigeon" "Cattle" "Goat" "Partridge" "Quail" "Ass" "Pheasant" "Alpaca" "Goose (domestic)" "Dromedary Bactrian Camel" "Ostrich" "Guinea pig" "Buffalo" "American Bison" "Guanaco" "Chicken" "Guinea fowl" "Nandu" "Duck(domestic) Muscovy duck" "Dromedary" "Yak (domestic)" "Bactrian camel" "Sheep" "Muscovy duck" "Turkey" "Swallow" "Duck (domestic)" "Cassowary" "Emu" "Dog" "Vicuña" "Pig" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 2 ;
+            ns1:path <https://w3id.org/exampleSpecie> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 18 ;
+            ns1:path <https://w3id.org/exampleOther_special_qualities> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 51 ;
+            ns1:path <https://w3id.org/exampleLocation_within_country> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 54 ;
+            ns1:path <https://w3id.org/exampleEggs_per_year_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 20 ;
+            ns1:path <https://w3id.org/exampleEfabis_genetic_features> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 21 ;
+            ns1:path <https://w3id.org/exampleEfabis_environmental_role> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 85 ;
+            ns1:path <https://w3id.org/exampleAge_maturity_females> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 69 ;
+            ns1:path <https://w3id.org/exampleLactation_length_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 50 ;
+            ns1:path <https://w3id.org/exampleImport> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 39 ;
+            ns1:path <https://w3id.org/exampleWither_height_females> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 4 ;
+            ns1:path <https://w3id.org/exampleDescription_Of_Specific_Uses> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 10 ;
+            ns1:path <https://w3id.org/exampleAdditional_information> ],
+        [ ns1:in ( "endangered" "vulnerable" "notAtRisk" "extinct" "endangeredMaintained" "critical" "cryoConservedOnly" "unknown" "criticalMaintained" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 108 ;
+            ns1:path <https://w3id.org/exampleDetailed_local_risk_status> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 101 ;
+            ns1:path <https://w3id.org/exampleAdditional_performance_parameters> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 41 ;
+            ns1:path <https://w3id.org/exampleWeight_females> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 63 ;
+            ns1:path <https://w3id.org/exampleFeeding_of_adults> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 84 ;
+            ns1:path <https://w3id.org/exampleAge_maturity_males> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 97 ;
+            ns1:path <https://w3id.org/exampleDressing_percentage> ],
+        [ ns1:in ( "n" "Y" "y" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 44 ;
+            ns1:path <https://w3id.org/exampleHerdbook> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 42 ;
+            ns1:path <https://w3id.org/exampleOther_specific_visible_traits> ],
+        [ ns1:in ( "green" "reddish" "white pinkish" "various" "Green" "Reddish" "grey" "black" "blue" "yellow" "Yellow" "orange" "Grey" "Orange" "white" "Black" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 28 ;
+            ns1:path <https://w3id.org/exampleShank_and_foot_colour> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 71 ;
+            ns1:path <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 3 ;
+            ns1:path <https://w3id.org/exampleBreed> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 9 ;
+            ns1:path <https://w3id.org/exampleUses> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 0 ;
+            ns1:path <https://w3id.org/exampleCountry> ],
+        [ ns1:in ( "Blue-Black" "blue-black" "White" "yellow" "Yellow" "white" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 27 ;
+            ns1:path <https://w3id.org/exampleSkin_colour> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 95 ;
+            ns1:path <https://w3id.org/exampleDaily_gain> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 64 ;
+            ns1:path <https://w3id.org/exampleMobility> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 82 ;
+            ns1:path <https://w3id.org/exampleBirth_weight_males> ],
+        [ ns1:in ( "walnut" "Duplex or V-shaped" "Single" "pea" "duplex or V-shaped" "rose" "single" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 26 ;
+            ns1:path <https://w3id.org/exampleComb_type> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 67 ;
+            ns1:path <https://w3id.org/exampleMilk_per_year_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 92 ;
+            ns1:path <https://w3id.org/exampleParturition_interval_MIN> ],
+        [ ns1:in ( "Exotic" "Native" "Locally adapted" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 43 ;
+            ns1:path <https://w3id.org/exampleBreed_classification> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 59 ;
+            ns1:path <https://w3id.org/exampleFleece_weight_MIN> ],
+        [ ns1:in ( "Grey and White" "White" "Brown" "grey" "red and brown" "yellow" "silver colombian" "red and black" "wild type and variants" "white and brown" "white and blue" "Grey and white" "Red and Black" "Various color" "various colours" "self-black" "self-white" "gold-colombian" "brown" "red" "white" "grey and white" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 29 ;
+            ns1:path <https://w3id.org/examplePlumage_colour> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 93 ;
+            ns1:path <https://w3id.org/exampleParturition_interval_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 17 ;
+            ns1:path <https://w3id.org/exampleSpecial_characteristic_of_product> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 61 ;
+            ns1:path <https://w3id.org/exampleFibre_diam> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 55 ;
+            ns1:path <https://w3id.org/exampleEgg_weight> ],
+        [ ns1:order 7 ;
+            ns1:path <https://w3id.org/exampleTransboundary_name> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 48 ;
+            ns1:path <https://w3id.org/exampleDescription_of_origin> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 87 ;
+            ns1:path <https://w3id.org/exampleAge_breeding_females> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 83 ;
+            ns1:path <https://w3id.org/exampleBirth_weight_females> ],
+        [ ns1:in ( "barred, autosomal" "mottled" "Barred, sex-linked" "cuckoo" "barred, sex-linked" "spangled" "Barred, Sex-linked" "No special pattern" "pencilled" "no special pattern" "laced" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 30 ;
+            ns1:path <https://w3id.org/examplePattern_within_feather> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 53 ;
+            ns1:path <https://w3id.org/exampleEggs_per_year_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 103 ;
+            ns1:path <https://w3id.org/exampleLitter_size_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 70 ;
+            ns1:path <https://w3id.org/exampleLactation_length_MAX> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 72 ;
+            ns1:path <https://w3id.org/exampleMilk_yield_per_lactation_(kg)_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 76 ;
+            ns1:path <https://w3id.org/exampleMilk_fat_MAX> ],
+        [ ns1:in ( "medium" "Medium" "Cashmere" "cashmere" "Coarse / Carpet" "Fine" "mohair/angora" "Mohair / Angora" "coarse/carpet" "fine" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 57 ;
+            ns1:path <https://w3id.org/exampleWool_type> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 65 ;
+            ns1:path <https://w3id.org/exampleMilk_per_year_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 12 ;
+            ns1:path <https://w3id.org/exampleEfabis_cultural_role_comment> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 24 ;
+            ns1:path <https://w3id.org/exampleCoat_description> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 23 ;
+            ns1:path <https://w3id.org/exampleBody_conformation> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 78 ;
+            ns1:path <https://w3id.org/exampleNumber_of_lactations> ],
+        [ ns1:in ( "0 / 2 / 4" "4" "2/4" "0/2" "2" "0 / 2" "0" "0/2/4" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 35 ;
+            ns1:path <https://w3id.org/exampleNumber_of_horns_males> ],
+        [ ns1:in ( "Feral" "feral" "wild" "domestic" "Wild" "Domestic" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 46 ;
+            ns1:path <https://w3id.org/exampleDomestication_status> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 88 ;
+            ns1:path <https://w3id.org/exampleAge_first_parturition_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 68 ;
+            ns1:path <https://w3id.org/exampleLactation_length_AVG> ],
+        [ ns1:in ( "0 / 2 / 4" "4" "2/4" "0/2" "2" "0 / 2" "0" "0/2/4" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 36 ;
+            ns1:path <https://w3id.org/exampleNumber_of_horns_females> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 75 ;
+            ns1:path <https://w3id.org/exampleMilk_fat_MIN> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 99 ;
+            ns1:path <https://w3id.org/exampleManagment_conditions_performance_measured> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 74 ;
+            ns1:path <https://w3id.org/exampleMilk_fat_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 94 ;
+            ns1:path <https://w3id.org/exampleLength_productive_life> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 22 ;
+            ns1:path <https://w3id.org/exampleEfabis_adaptability_to_marginal_land> ],
+        [ ns1:in ( "endangered" "vulnerable" "notAtRisk" "critical" "unknown" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 110 ;
+            ns1:path <https://w3id.org/exampleInternational_Transboundary_Risk_(detailed)> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 104 ;
+            ns1:path <https://w3id.org/exampleLitter_size_MAX> ],
+        [ ns1:in ( "indigenous" "fancy" "middle level" "Indigenous" "laboratory" "Industrial" "Middle level" "industrial" "Fancy" "Laboratory" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 31 ;
+            ns1:path <https://w3id.org/exampleAvian_classification> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 77 ;
+            ns1:path <https://w3id.org/exampleMilk_per_day> ],
+        [ ns1:in ( "endangered" "vulnerable" "notAtRisk" "extinct" "critical" "unknown" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 109 ;
+            ns1:path <https://w3id.org/exampleRegional_Transboundary_Risk_(detailed)> ],
+        [ ns1:in ( "Breed" "breed" "mongrel (Birds)" "variety" "Variety" "Mongrel" "strain" "Strain" "Species" "line" "Line" "species" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 47 ;
+            ns1:path <https://w3id.org/exampleTaxonomic_classification> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 5 ;
+            ns1:path <https://w3id.org/exampleLang> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 37 ;
+            ns1:path <https://w3id.org/exampleHorn_shape_size_and_comments> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 6 ;
+            ns1:path <https://w3id.org/exampleDescription> ],
+        [ ns1:in ( "international" "local" "regional" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 105 ;
+            ns1:path <https://w3id.org/exampleGeographical_classification> ],
+        [ ns1:in ( "notAtRisk" "extinct" "atRisk" "cryoConservedOnly" "unknown" ) ;
+            ns1:maxCount 1 ;
+            ns1:order 107 ;
+            ns1:path <https://w3id.org/exampleLocal_Risk> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 58 ;
+            ns1:path <https://w3id.org/exampleFleece_weight_AVG> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 16 ;
+            ns1:path <https://w3id.org/exampleSpecific_reproductive_characteristic> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 25 ;
+            ns1:path <https://w3id.org/exampleCoat_quality> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 34 ;
+            ns1:path <https://w3id.org/exampleEfabis_skin_colour> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 13 ;
+            ns1:path <https://w3id.org/exampleEfabis_cultural_value> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 1 ;
+            ns1:path <https://w3id.org/exampleISO3> ],
+        [ ns1:maxCount 1 ;
+            ns1:order 91 ;
+            ns1:path <https://w3id.org/exampleParturition_interval_AVG> ] ;
+    ns1:targetClass <https://w3id.org/exampleBreed> .
+

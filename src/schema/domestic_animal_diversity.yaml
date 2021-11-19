@@ -1,0 +1,1243 @@
+id: https://w3id.org/example
+name: example
+description: example
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  example: https://w3id.org/example
+default_prefix: example
+types:
+  DAD-IS 7.9.2021 http identifier:
+    typeof: string
+classes:
+  Breed:
+    slots:
+    - Country
+    - ISO3
+    - Specie
+    - Breed
+    - Description Of Specific Uses
+    - Lang
+    - Description
+    - Transboundary name
+    - Other name
+    - Uses
+    - Additional information
+    - Additional information comments
+    - Efabis cultural role comment
+    - Efabis cultural value
+    - Adaptability to specific environment
+    - Specific resistance or tolerance
+    - Specific reproductive characteristic
+    - Special characteristic of product
+    - Other special qualities
+    - Reference for special qualities
+    - Efabis genetic features
+    - Efabis environmental role
+    - Efabis adaptability to marginal land
+    - Body conformation
+    - Coat description
+    - Coat quality
+    - Comb type
+    - Skin colour
+    - Shank and foot colour
+    - Plumage colour
+    - Pattern within feather
+    - Avian classification
+    - Color comments
+    - Efabis main colour
+    - Efabis skin colour
+    - Number of horns males
+    - Number of horns females
+    - Horn shape size and comments
+    - Wither height males
+    - Wither height females
+    - Weight males
+    - Weight females
+    - Other specific visible traits
+    - Breed classification
+    - Herdbook
+    - Herdbook established
+    - Domestication status
+    - Taxonomic classification
+    - Description of origin
+    - Year of origin
+    - Import
+    - Location within country
+    - Eggs per year AVG
+    - Eggs per year MIN
+    - Eggs per year MAX
+    - Egg weight
+    - Wool or hair
+    - Wool type
+    - Fleece weight AVG
+    - Fleece weight MIN
+    - Fleece weight MAX
+    - Fibre diam
+    - Management system
+    - Feeding of adults
+    - Mobility
+    - Milk per year AVG
+    - Milk per year MIN
+    - Milk per year MAX
+    - Lactation length AVG
+    - Lactation length MIN
+    - Lactation length MAX
+    - Milk yield per lactation (kg) AVG
+    - Milk yield per lactation (kg) MIN
+    - Milk yield per lactation (kg) MAX
+    - Milk fat AVG
+    - Milk fat MIN
+    - Milk fat MAX
+    - Milk per day
+    - Number of lactations
+    - Efabis milk protein AVG
+    - Efabis milk protein MIN
+    - Efabis milk protein MAX
+    - Birth weight males
+    - Birth weight females
+    - Age maturity males
+    - Age maturity females
+    - Age breeding males
+    - Age breeding females
+    - Age first parturition AVG
+    - Age first parturition MIN
+    - Age first parturition MAX
+    - Parturition interval AVG
+    - Parturition interval MIN
+    - Parturition interval MAX
+    - Length productive life
+    - Daily gain
+    - Carcass weight
+    - Dressing percentage
+    - Performance data reference
+    - Managment conditions performance measured
+    - Comments managment conditions
+    - Additional performance parameters
+    - Litter size AVG
+    - Litter size MIN
+    - Litter size MAX
+    - Geographical classification
+    - Local cryo conservation status
+    - Local Risk
+    - Detailed local risk status
+    - Regional Transboundary Risk (detailed)
+    - International Transboundary Risk (detailed)
+    slot_usage: {}
+  Indicator:
+    slots:
+    - Indicator Reference Number
+    - Series Name
+    - Series Description
+    - Geo Area Code
+    - Geo Area Name
+    - Year
+    - Reference Area Type (Countries)
+    - Indicator value
+    - Unit of Measurement
+    - Nature
+    - Reporting Type
+    - Number of local breeds (not extinct)
+    - Number of local breeds with unknown status
+    - Number of local breeds at risk
+    - Number of local breeds not at risk
+    - Source Detail
+    - Foot Notes
+    - SDG Region Code
+    - SDG Region Name
+    - M49 Level-1 Code
+    - M49 Level-1 Region
+    - M49 Level-2 Code
+    - M49 Level-2 Name
+    - M49 Intermediate Code
+    - M49 Intermediate Name
+    - MDG Code
+    - MDG Regions
+    - LDCs Code
+    - LDCs Name
+    - LLDCs Code
+    - LLDCs Name
+    - Number of countries or territories in the region
+    - Number of countries or territories with valid data
+    - Percentage of countries or territories with valid data
+    slot_usage: {}
+slots:
+  Country:
+    range: string
+    examples:
+    - value: Zimbabwe
+  ISO3:
+    range: string
+    examples:
+    - value: ZWE
+  Specie:
+    range: Specie_enum
+    examples:
+    - value: Sheep
+  Breed:
+    range: string
+    examples:
+    - value: Wiltiper
+  Description Of Specific Uses:
+    range: string
+    examples:
+    - value: While poultry are used mainly for meat and eggs, they are also commonly
+        used in traditional rituals and as gifts at various occasions throughout the
+        country. Their droppings are used in feed formulations as well as a source
+        of manure.
+  Lang:
+    range: string
+    examples:
+    - value: eng.
+  Description:
+    range: string
+    examples:
+    - value: fat-tailed with similar features to Masai and Tswana sheep.Sabi sheep
+        are haired with multiplicity of colours from black through all shades of brown
+        to pure white
+  Transboundary name:
+    range: string
+    examples:
+    - value: Van Rooy
+    multivalued: true
+  Other name:
+    range: string
+    examples:
+    - value: Setswana
+  Uses:
+    range: string
+    examples:
+    - value: Meat
+  Additional information:
+    range: string
+    examples:
+    - value: no flocks exist
+  Additional information comments:
+    range: string
+    examples:
+    - value: Breed now nonexististant
+  Efabis cultural role comment:
+    range: string
+    examples:
+    - value: It is ancient native breed of Ukraine.
+  Efabis cultural value:
+    range: string
+    examples:
+    - value: The importance of this breed derives from its numerical value and the
+        yield it provides to local farming through the production of milk, meat and
+        wool.
+  Adaptability to specific environment:
+    range: string
+    examples:
+    - value: The breed is well adapted to semi-arid, sub-tropical climate.
+  Specific resistance or tolerance:
+    range: string
+    examples:
+    - value: Well adapted to cope with disease and parasite challenges.
+  Specific reproductive characteristic:
+    range: string
+    examples:
+    - value: The animals are breeding throughout the year. It is stated that the maternal
+        abilities of Sabi sheep are much better than the maternal abilities of South
+        African Mutton Merino.
+  Special characteristic of product:
+    range: string
+    examples:
+    - value: The fat of the tail is used for cooking and preservation. The meat has
+        good flavour and is marbled.
+  Other special qualities:
+    range: string
+    examples:
+    - value: These hardy animals survive by grazing and scavenging under extremely
+        harsh conditions (particularly nutrition).
+  Reference for special qualities:
+    range: string
+    examples:
+    - value: H.K. Ward; Rhodesia Agricultural Journal, 56, 218-223 (1959). Had, Matopos
+        Research Station I.K. Chifanba (1988) Journal Agric. Sci. Cambridge, 111,
+        59-65.
+  Efabis genetic features:
+    range: string
+    examples:
+    - value: For Romanov sheep the high gene frequency of ES-1b is characteristic.
+        AL B allele is prevailing in the population of Romanov sheep. The animals
+        have rare allele of prealbumine - PA 0, which has low frequency. Ttransferrin
+        has 5 alleles - Tf A, Tf B, Tf C, Tf D, Tf E. The most frequently transferrine
+        alleles are Tf C and Tf D.
+  Efabis environmental role:
+    range: string
+    examples:
+    - value: can use poor vegetation of ungraded nature pastures and do a landscape
+        more attractive.
+  Efabis adaptability to marginal land:
+    range: string
+    examples:
+    - value: High adaptable.
+  Body conformation:
+    range: string
+  Coat description:
+    range: string
+  Coat quality:
+    range: string
+  Comb type:
+    range: Comb_type_enum
+    examples:
+    - value: single
+  Skin colour:
+    range: Skin_colour_enum
+    examples:
+    - value: yellow
+  Shank and foot colour:
+    range: Shank_and_foot_colour_enum
+    examples:
+    - value: yellow
+  Plumage colour:
+    range: Plumage_colour_enum
+    examples:
+    - value: various colours
+  Pattern within feather:
+    range: Pattern_within_feather_enum
+    examples:
+    - value: mottled
+  Avian classification:
+    range: Avian_classification_enum
+    examples:
+    - value: indigenous
+  Color comments:
+    range: string
+    examples:
+    - value: 'uni coloured: usually black, also white or brown'
+  Efabis main colour:
+    range: string
+    examples:
+    - value: White.
+  Efabis skin colour:
+    range: string
+    examples:
+    - value: Skin colour is white with pink shade, but there can be dark spots.
+  Number of horns males:
+    range: Number_of_horns_males_enum
+    examples:
+    - value: 0/2
+  Number of horns females:
+    range: Number_of_horns_females_enum
+    examples:
+    - value: 0/2
+  Horn shape size and comments:
+    range: string
+    examples:
+    - value: females are rarely horned
+  Wither height males:
+    range: float
+    examples:
+    - value: '64'
+  Wither height females:
+    range: float
+    examples:
+    - value: '61'
+  Weight males:
+    range: float
+    examples:
+    - value: '90'
+  Weight females:
+    range: float
+    examples:
+    - value: '62'
+  Other specific visible traits:
+    range: string
+    examples:
+    - value: long legs, fat tail, coarse hair
+  Breed classification:
+    range: Breed_classification_enum
+    examples:
+    - value: Locally adapted
+  Herdbook:
+    range: Herdbook_enum
+    examples:
+    - value: y
+  Herdbook established:
+    range: string
+    examples:
+    - value: '1974'
+  Domestication status:
+    range: Domestication_status_enum
+    examples:
+    - value: domestic
+  Taxonomic classification:
+    range: Taxonomic_classification_enum
+    examples:
+    - value: breed
+  Description of origin:
+    range: string
+    examples:
+    - value: composite of Wiltshire Horn rams and Blackhead Persian ewes
+  Year of origin:
+    range: string
+    examples:
+    - value: '1950'
+  Import:
+    range: string
+    examples:
+    - value: early 1969 ,Namibia and South Africa
+  Location within country:
+    range: string
+    examples:
+    - value: Hartley-Gatooma
+  Eggs per year AVG:
+    range: datetime
+    examples:
+    - value: '200'
+  Eggs per year MIN:
+    range: integer
+    examples:
+    - value: '170'
+  Eggs per year MAX:
+    range: integer
+    examples:
+    - value: '200'
+  Egg weight:
+    range: float
+    examples:
+    - value: '75'
+  Wool or hair:
+    range: Wool_or_hair_enum
+    examples:
+    - value: hair
+  Wool type:
+    range: Wool_type_enum
+    examples:
+    - value: medium
+  Fleece weight AVG:
+    range: float
+    examples:
+    - value: '4.75'
+  Fleece weight MIN:
+    range: float
+    examples:
+    - value: '3.22'
+  Fleece weight MAX:
+    range: float
+    examples:
+    - value: '6.67'
+  Fibre diam:
+    range: float
+    examples:
+    - value: '22'
+  Management system:
+    range: string
+    examples:
+    - value: semi - intensive
+  Feeding of adults:
+    range: string
+    examples:
+    - value: grazing
+  Mobility:
+    range: string
+    examples:
+    - value: stationary
+  Milk per year AVG:
+    range: float
+    examples:
+    - value: '5170'
+  Milk per year MIN:
+    range: integer
+    examples:
+    - value: '5000'
+  Milk per year MAX:
+    range: integer
+    examples:
+    - value: '6000'
+  Lactation length AVG:
+    range: float
+    examples:
+    - value: '180'
+  Lactation length MIN:
+    range: integer
+    examples:
+    - value: '245'
+  Lactation length MAX:
+    range: integer
+    examples:
+    - value: '270'
+  Milk yield per lactation (kg) AVG:
+    range: float
+    examples:
+    - value: '50'
+  Milk yield per lactation (kg) MIN:
+    range: float
+    examples:
+    - value: '213'
+  Milk yield per lactation (kg) MAX:
+    range: float
+    examples:
+    - value: '234'
+  Milk fat AVG:
+    range: float
+    examples:
+    - value: '7.1'
+  Milk fat MIN:
+    range: float
+    examples:
+    - value: '2'
+  Milk fat MAX:
+    range: float
+    examples:
+    - value: '3'
+  Milk per day:
+    range: float
+    examples:
+    - value: '0.47'
+  Number of lactations:
+    range: float
+    examples:
+    - value: '21'
+  Efabis milk protein AVG:
+    range: float
+    examples:
+    - value: '5.97'
+  Efabis milk protein MIN:
+    range: float
+    examples:
+    - value: '4.5'
+  Efabis milk protein MAX:
+    range: float
+    examples:
+    - value: '3.6'
+  Birth weight males:
+    range: float
+    examples:
+    - value: '3.4'
+  Birth weight females:
+    range: float
+    examples:
+    - value: '3'
+  Age maturity males:
+    range: float
+    examples:
+    - value: '18'
+  Age maturity females:
+    range: float
+    examples:
+    - value: '18'
+  Age breeding males:
+    range: float
+    examples:
+    - value: '18'
+  Age breeding females:
+    range: float
+    examples:
+    - value: '18'
+  Age first parturition AVG:
+    range: float
+    examples:
+    - value: '18'
+  Age first parturition MIN:
+    range: float
+    examples:
+    - value: '34'
+  Age first parturition MAX:
+    range: float
+    examples:
+    - value: '36'
+  Parturition interval AVG:
+    range: float
+    examples:
+    - value: '365'
+  Parturition interval MIN:
+    range: integer
+    examples:
+    - value: '266'
+  Parturition interval MAX:
+    range: integer
+    examples:
+    - value: '363'
+  Length productive life:
+    range: float
+    examples:
+    - value: '12'
+  Daily gain:
+    range: float
+    examples:
+    - value: '148'
+  Carcass weight:
+    range: float
+    examples:
+    - value: '15.9'
+  Dressing percentage:
+    range: float
+    examples:
+    - value: '46.5'
+  Performance data reference:
+    range: string
+    examples:
+    - value: FAO Breed Survey
+  Managment conditions performance measured:
+    range: string
+    examples:
+    - value: The value of carcass weight reported here is average for male at 3 pairs
+        of permanent incisors.
+  Comments managment conditions:
+    range: string
+    examples:
+    - value: Commercial production of lamb and mutton.
+  Additional performance parameters:
+    range: string
+    examples:
+    - value: Parece que no se han conducido investigaciiones acerca de Wiltiper.
+  Litter size AVG:
+    range: float
+    examples:
+    - value: '1.02'
+  Litter size MIN:
+    range: float
+    examples:
+    - value: '1.02'
+  Litter size MAX:
+    range: float
+    examples:
+    - value: '1.31'
+  Geographical classification:
+    range: Geographical_classification_enum
+    examples:
+    - value: local
+  Local cryo conservation status:
+    range: Local_cryo_conservation_status_enum
+    examples:
+    - value: No Information
+  Local Risk:
+    range: Local_Risk_enum
+    examples:
+    - value: unknown
+  Detailed local risk status:
+    range: Detailed_local_risk_status_enum
+    examples:
+    - value: unknown
+  Regional Transboundary Risk (detailed):
+    range: Regional_Transboundary_Risk_(detailed)_enum
+    examples:
+    - value: notAtRisk
+  International Transboundary Risk (detailed):
+    range: International_Transboundary_Risk_(detailed)_enum
+    examples:
+    - value: notAtRisk
+  Indicator Reference Number:
+    range: datetime
+    examples:
+    - value: 2.5.2
+  Series Name:
+    range: integer
+    examples:
+    - value: '3062'
+  Series Description:
+    range: string
+    examples:
+    - value: Proportion of local breeds classified as being at risk of extinction
+  Geo Area Code:
+    range: integer
+    examples:
+    - value: '716'
+  Geo Area Name:
+    range: string
+    examples:
+    - value: Zimbabwe
+  Year:
+    range: integer
+    examples:
+    - value: '2021'
+  Reference Area Type (Countries):
+    range: string
+    examples:
+    - value: ZWE
+  Indicator value:
+    range: string
+    examples:
+    - value: NA
+  Unit of Measurement:
+    range: Unit_of_Measurement_enum
+    examples:
+    - value: PERCENT
+  Nature:
+    range: Nature_enum
+    examples:
+    - value: NA
+  Reporting Type:
+    range: Reporting_Type_enum
+    examples:
+    - value: N
+  Number of local breeds (not extinct):
+    range: integer
+    examples:
+    - value: '4'
+  Number of local breeds with unknown status:
+    range: integer
+    examples:
+    - value: '4'
+  Number of local breeds at risk:
+    range: integer
+    examples:
+    - value: '0'
+  Number of local breeds not at risk:
+    range: integer
+    examples:
+    - value: '0'
+  Source Detail:
+    range: DAD-IS 7.9.2021 http identifier
+    examples:
+    - value: DAD-IS 7.9.2021 http://www.fao.org/dad-is/
+  Foot Notes:
+    range: string
+    examples:
+    - value: Out of 4 local breeds, 100% are of unknown status
+  SDG Region Code:
+    range: integer
+    examples:
+    - value: '202'
+  SDG Region Name:
+    range: string
+    examples:
+    - value: Sub-Saharan Africa (M49)
+  M49 Level-1 Code:
+    range: integer
+    examples:
+    - value: '002'
+  M49 Level-1 Region:
+    range: M49_Level-1_Region_enum
+    examples:
+    - value: Africa
+  M49 Level-2 Code:
+    range: integer
+    examples:
+    - value: '202'
+  M49 Level-2 Name:
+    range: string
+    examples:
+    - value: Sub-Saharan Africa (M49)
+  M49 Intermediate Code:
+    range: integer
+    examples:
+    - value: '014'
+  M49 Intermediate Name:
+    range: M49_Intermediate_Name_enum
+    examples:
+    - value: Eastern Africa (M49)
+  MDG Code:
+    range: integer
+    examples:
+    - value: '738'
+  MDG Regions:
+    range: string
+    examples:
+    - value: Sub-Saharan Africa (MDG)
+  LDCs Code:
+    range: integer
+    examples:
+    - value: '199'
+  LDCs Name:
+    range: string
+    examples:
+    - value: Least Developed Countries (LDCs)
+  LLDCs Code:
+    range: integer
+    examples:
+    - value: '432'
+  LLDCs Name:
+    range: string
+    examples:
+    - value: Landlocked developing countries (LLDCs)
+  Number of countries or territories in the region:
+    range: integer
+    examples:
+    - value: '18'
+  Number of countries or territories with valid data:
+    range: integer
+    examples:
+    - value: '8'
+  Percentage of countries or territories with valid data:
+    range: float
+    examples:
+    - value: '44.44'
+enums:
+  Specie_enum:
+    permissible_values:
+      Horse:
+        description: Horse
+      Deer:
+        description: Deer
+      Rabbit:
+        description: Rabbit
+      Llama:
+        description: Llama
+      Peacock:
+        description: Peacock
+      Pigeon:
+        description: Pigeon
+      Cattle:
+        description: Cattle
+      Goat:
+        description: Goat
+      Partridge:
+        description: Partridge
+      Quail:
+        description: Quail
+      Ass:
+        description: Ass
+      Pheasant:
+        description: Pheasant
+      Alpaca:
+        description: Alpaca
+      Goose (domestic):
+        description: Goose (domestic)
+      Dromedary Bactrian Camel:
+        description: Dromedary Bactrian Camel
+      Ostrich:
+        description: Ostrich
+      Guinea pig:
+        description: Guinea pig
+      Buffalo:
+        description: Buffalo
+      American Bison:
+        description: American Bison
+      Guanaco:
+        description: Guanaco
+      Chicken:
+        description: Chicken
+      Guinea fowl:
+        description: Guinea fowl
+      Nandu:
+        description: Nandu
+      Duck(domestic) Muscovy duck:
+        description: Duck(domestic) Muscovy duck
+      Dromedary:
+        description: Dromedary
+      Yak (domestic):
+        description: Yak (domestic)
+      Bactrian camel:
+        description: Bactrian camel
+      Sheep:
+        description: Sheep
+      Muscovy duck:
+        description: Muscovy duck
+      Turkey:
+        description: Turkey
+      Swallow:
+        description: Swallow
+      Duck (domestic):
+        description: Duck (domestic)
+      Cassowary:
+        description: Cassowary
+      Emu:
+        description: Emu
+      Dog:
+        description: Dog
+      "Vicu\xF1a":
+        description: "Vicu\xF1a"
+      Pig:
+        description: Pig
+  Comb_type_enum:
+    permissible_values:
+      walnut:
+        description: walnut
+      Duplex or V-shaped:
+        description: Duplex or V-shaped
+      Single:
+        description: Single
+      pea:
+        description: pea
+      duplex or V-shaped:
+        description: duplex or V-shaped
+      rose:
+        description: rose
+      single:
+        description: single
+  Skin_colour_enum:
+    permissible_values:
+      Blue-Black:
+        description: Blue-Black
+      blue-black:
+        description: blue-black
+      White:
+        description: White
+      yellow:
+        description: yellow
+      Yellow:
+        description: Yellow
+      white:
+        description: white
+  Shank_and_foot_colour_enum:
+    permissible_values:
+      green:
+        description: green
+      reddish:
+        description: reddish
+      white pinkish:
+        description: white pinkish
+      various:
+        description: various
+      Green:
+        description: Green
+      Reddish:
+        description: Reddish
+      grey:
+        description: grey
+      black:
+        description: black
+      blue:
+        description: blue
+      yellow:
+        description: yellow
+      Yellow:
+        description: Yellow
+      orange:
+        description: orange
+      Grey:
+        description: Grey
+      Orange:
+        description: Orange
+      white:
+        description: white
+      Black:
+        description: Black
+  Plumage_colour_enum:
+    permissible_values:
+      Grey and White:
+        description: Grey and White
+      White:
+        description: White
+      Brown:
+        description: Brown
+      grey:
+        description: grey
+      red and brown:
+        description: red and brown
+      yellow:
+        description: yellow
+      silver colombian:
+        description: silver colombian
+      red and black:
+        description: red and black
+      wild type and variants:
+        description: wild type and variants
+      white and brown:
+        description: white and brown
+      white and blue:
+        description: white and blue
+      Grey and white:
+        description: Grey and white
+      Red and Black:
+        description: Red and Black
+      Various color:
+        description: Various color
+      various colours:
+        description: various colours
+      self-black:
+        description: self-black
+      self-white:
+        description: self-white
+      gold-colombian:
+        description: gold-colombian
+      brown:
+        description: brown
+      red:
+        description: red
+      white:
+        description: white
+      grey and white:
+        description: grey and white
+  Pattern_within_feather_enum:
+    permissible_values:
+      barred, autosomal:
+        description: barred, autosomal
+      mottled:
+        description: mottled
+      Barred, sex-linked:
+        description: Barred, sex-linked
+      cuckoo:
+        description: cuckoo
+      barred, sex-linked:
+        description: barred, sex-linked
+      spangled:
+        description: spangled
+      Barred, Sex-linked:
+        description: Barred, Sex-linked
+      No special pattern:
+        description: No special pattern
+      pencilled:
+        description: pencilled
+      no special pattern:
+        description: no special pattern
+      laced:
+        description: laced
+  Avian_classification_enum:
+    permissible_values:
+      indigenous:
+        description: indigenous
+      fancy:
+        description: fancy
+      middle level:
+        description: middle level
+      Indigenous:
+        description: Indigenous
+      laboratory:
+        description: laboratory
+      Industrial:
+        description: Industrial
+      Middle level:
+        description: Middle level
+      industrial:
+        description: industrial
+      Fancy:
+        description: Fancy
+      Laboratory:
+        description: Laboratory
+  Number_of_horns_males_enum:
+    permissible_values:
+      0 / 2 / 4:
+        description: 0 / 2 / 4
+      '4':
+        description: '4'
+      2/4:
+        description: 2/4
+      0/2:
+        description: 0/2
+      '2':
+        description: '2'
+      0 / 2:
+        description: 0 / 2
+      '0':
+        description: '0'
+      0/2/4:
+        description: 0/2/4
+  Number_of_horns_females_enum:
+    permissible_values:
+      0 / 2 / 4:
+        description: 0 / 2 / 4
+      '4':
+        description: '4'
+      2/4:
+        description: 2/4
+      0/2:
+        description: 0/2
+      '2':
+        description: '2'
+      0 / 2:
+        description: 0 / 2
+      '0':
+        description: '0'
+      0/2/4:
+        description: 0/2/4
+  Breed_classification_enum:
+    permissible_values:
+      Exotic:
+        description: Exotic
+      Native:
+        description: Native
+      Locally adapted:
+        description: Locally adapted
+  Herdbook_enum:
+    permissible_values:
+      n:
+        description: n
+      Y:
+        description: Y
+      y:
+        description: y
+  Domestication_status_enum:
+    permissible_values:
+      Feral:
+        description: Feral
+      feral:
+        description: feral
+      wild:
+        description: wild
+      domestic:
+        description: domestic
+      Wild:
+        description: Wild
+      Domestic:
+        description: Domestic
+  Taxonomic_classification_enum:
+    permissible_values:
+      Breed:
+        description: Breed
+      breed:
+        description: breed
+      mongrel (Birds):
+        description: mongrel (Birds)
+      variety:
+        description: variety
+      Variety:
+        description: Variety
+      Mongrel:
+        description: Mongrel
+      strain:
+        description: strain
+      Strain:
+        description: Strain
+      Species:
+        description: Species
+      line:
+        description: line
+      Line:
+        description: Line
+      species:
+        description: species
+  Wool_or_hair_enum:
+    permissible_values:
+      hair:
+        description: hair
+      Wool:
+        description: Wool
+      wool:
+        description: wool
+      Hair:
+        description: Hair
+  Wool_type_enum:
+    permissible_values:
+      medium:
+        description: medium
+      Medium:
+        description: Medium
+      Cashmere:
+        description: Cashmere
+      cashmere:
+        description: cashmere
+      Coarse / Carpet:
+        description: Coarse / Carpet
+      Fine:
+        description: Fine
+      mohair/angora:
+        description: mohair/angora
+      Mohair / Angora:
+        description: Mohair / Angora
+      coarse/carpet:
+        description: coarse/carpet
+      fine:
+        description: fine
+  Geographical_classification_enum:
+    permissible_values:
+      international:
+        description: international
+      local:
+        description: local
+      regional:
+        description: regional
+  Local_cryo_conservation_status_enum:
+    permissible_values:
+      No Information:
+        description: No Information
+      Sufficient:
+        description: Sufficient
+      No Material:
+        description: No Material
+      Not Sufficient:
+        description: Not Sufficient
+  Local_Risk_enum:
+    permissible_values:
+      notAtRisk:
+        description: notAtRisk
+      extinct:
+        description: extinct
+      atRisk:
+        description: atRisk
+      cryoConservedOnly:
+        description: cryoConservedOnly
+      unknown:
+        description: unknown
+  Detailed_local_risk_status_enum:
+    permissible_values:
+      endangered:
+        description: endangered
+      vulnerable:
+        description: vulnerable
+      notAtRisk:
+        description: notAtRisk
+      extinct:
+        description: extinct
+      endangeredMaintained:
+        description: endangeredMaintained
+      critical:
+        description: critical
+      cryoConservedOnly:
+        description: cryoConservedOnly
+      unknown:
+        description: unknown
+      criticalMaintained:
+        description: criticalMaintained
+  Regional_Transboundary_Risk_(detailed)_enum:
+    permissible_values:
+      endangered:
+        description: endangered
+      vulnerable:
+        description: vulnerable
+      notAtRisk:
+        description: notAtRisk
+      extinct:
+        description: extinct
+      critical:
+        description: critical
+      unknown:
+        description: unknown
+  International_Transboundary_Risk_(detailed)_enum:
+    permissible_values:
+      endangered:
+        description: endangered
+      vulnerable:
+        description: vulnerable
+      notAtRisk:
+        description: notAtRisk
+      critical:
+        description: critical
+      unknown:
+        description: unknown
+  Unit_of_Measurement_enum:
+    permissible_values:
+      PERCENT:
+        description: PERCENT
+  Nature_enum:
+    permissible_values:
+      NA:
+        description: NA
+      G:
+        description: G
+      C:
+        description: C
+      E:
+        description: E
+  Reporting_Type_enum:
+    permissible_values:
+      R:
+        description: R
+      G:
+        description: G
+      N:
+        description: N
+  M49_Level-1_Region_enum:
+    permissible_values:
+      Africa:
+        description: Africa
+      Oceania (M49):
+        description: Oceania (M49)
+      Americas:
+        description: Americas
+      Europe (M49):
+        description: Europe (M49)
+      Asia (M49):
+        description: Asia (M49)
+  M49_Intermediate_Name_enum:
+    permissible_values:
+      Middle Africa (M49):
+        description: Middle Africa (M49)
+      Central America (M49):
+        description: Central America (M49)
+      Eastern Africa (M49):
+        description: Eastern Africa (M49)
+      Southern Africa (M49):
+        description: Southern Africa (M49)
+      Caribbean (M49):
+        description: Caribbean (M49)
+      South America (M49):
+        description: South America (M49)
+      Western Africa (M49):
+        description: Western Africa (M49)
+
